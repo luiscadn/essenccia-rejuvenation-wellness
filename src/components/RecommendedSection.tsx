@@ -33,7 +33,7 @@ export const RecommendedSection: React.FC<RecommendedSectionProps> = ({ onBookTr
               transition={{ duration: 0.7, delay: i * 0.15 }}
               className={`group flex flex-col ${i === 1 ? 'md:mt-12' : ''}`}
             >
-              <div className="relative aspect-[4/5] overflow-hidden bg-[#f0efec] shadow-sm">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-[#f0efec] shadow-md border border-[#484774]/10">
                 <Image
                   src={t.image}
                   alt={t.name}
@@ -42,7 +42,7 @@ export const RecommendedSection: React.FC<RecommendedSectionProps> = ({ onBookTr
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 {t.badge && (
-                  <span className="absolute top-4 left-4 bg-[#f7f7f4] px-3 py-1.5 text-[9px] uppercase tracking-[0.2em] font-semibold text-[#484774] shadow-sm">
+                  <span className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-semibold text-[#484774] shadow-sm">
                     {t.badge}
                   </span>
                 )}

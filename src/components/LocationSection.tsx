@@ -93,14 +93,14 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
             <div className="pt-2 flex flex-col sm:flex-row gap-4">
               <button
                 onClick={onOpenBooking}
-                className="px-8 py-3.5 bg-[#484774] hover:bg-[#3b3a63] text-white text-xs uppercase tracking-[0.2em] font-medium transition-all shadow-md flex items-center justify-center gap-2"
+                className="px-8 py-3.5 rounded-full bg-[#484774] hover:bg-[#3b3a63] text-white text-xs uppercase tracking-[0.2em] font-medium transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02]"
               >
                 <Calendar className="w-4 h-4 text-[#d7a761]" />
                 <span>Reserve Consultation</span>
               </button>
               <a
                 href={`tel:${CLINIC_INFO.phoneClean}`}
-                className="px-8 py-3.5 border border-stone-400 hover:border-stone-800 text-stone-800 text-xs uppercase tracking-[0.2em] font-medium transition-all flex items-center justify-center gap-2 hover:bg-stone-100"
+                className="px-8 py-3.5 rounded-full border border-[#484774]/20 hover:border-[#484774] text-[#484774] text-xs uppercase tracking-[0.2em] font-medium transition-all flex items-center justify-center gap-2 hover:bg-stone-50 hover:scale-[1.02]"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Clinic</span>

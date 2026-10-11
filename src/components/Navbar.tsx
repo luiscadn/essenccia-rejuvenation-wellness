@@ -106,7 +106,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </button>
             <button
               onClick={onOpenBooking}
-              className="hidden sm:inline-flex px-6 py-3 bg-[#484774] hover:bg-[#3b3a63] text-[#f7f7f4] text-[11px] uppercase tracking-[0.2em] font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#739cd2] focus-visible:ring-offset-2"
+              className="hidden sm:inline-flex px-6 py-2.5 rounded-full bg-[#484774] hover:bg-[#3b3a63] text-[#f7f7f4] text-[11px] uppercase tracking-[0.2em] font-medium transition-all shadow-xs hover:shadow hover:scale-[1.02] focus-visible:ring-2 focus-visible:ring-[#739cd2] focus-visible:ring-offset-2"
             >
               Book Consultation
             </button>

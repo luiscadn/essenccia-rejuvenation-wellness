@@ -57,6 +57,13 @@ async function run() {
   await facilitySection.screenshot({ path: `${ARTIFACT_DIR}/facilities_video_validated.png` });
   console.log('📸 Saved screenshot of Facilities Video Section');
 
+  // Check and capture Promises Section
+  const promisesSection = page.locator('#promises');
+  await promisesSection.scrollIntoViewIfNeeded();
+  await page.waitForTimeout(600);
+  await promisesSection.screenshot({ path: `${ARTIFACT_DIR}/promises_redesigned_validated.png` });
+  console.log('📸 Saved screenshot of Redesigned Promises Section');
+
   // 4. Hero section screenshot
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.waitForTimeout(600);

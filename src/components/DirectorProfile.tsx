@@ -25,7 +25,7 @@ export const DirectorProfile: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="lg:col-span-5 relative"
         >
-          <div className="relative aspect-[4/5] overflow-hidden bg-[#f0efec] shadow-[0_20px_40px_-20px_rgba(72,71,116,0.3)]">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-[#f0efec] shadow-[0_20px_40px_-20px_rgba(72,71,116,0.3)] border border-[#484774]/10">
             <Image
               src="/fotos_webp/ledy_founder.webp"
               alt="Ledy, founder and director of Essenccia Rejuvenation & Wellness"
@@ -35,7 +35,7 @@ export const DirectorProfile: React.FC = () => {
             />
           </div>
 
-          <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-white border border-[#484774]/10 px-6 py-5 shadow-[0_20px_40px_-24px_rgba(72,71,116,0.4)]">
+          <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-white/95 backdrop-blur-md rounded-2xl border border-[#484774]/10 px-6 py-5 shadow-[0_20px_40px_-24px_rgba(72,71,116,0.4)]">
             <p className="eyebrow">Founder &amp; Director</p>
             <p className="font-serif text-3xl font-light text-[#484774] mt-1">Ledy</p>
             <p className="text-[10px] uppercase tracking-wider text-[#d7a761] font-semibold mt-0.5">Best of 2026 Awardee</p>
@@ -63,7 +63,7 @@ export const DirectorProfile: React.FC = () => {
           </div>
 
           {/* Award banner link */}
-          <div className="max-w-xl p-4 bg-[#f0efec] border-l-4 border-[#d7a761] flex items-center justify-between gap-4">
+          <div className="max-w-xl p-4 sm:p-5 rounded-2xl bg-[#f0efec] border-l-4 border-[#d7a761] shadow-xs flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <Award className="w-5 h-5 text-[#d7a761] shrink-0" />
               <div>

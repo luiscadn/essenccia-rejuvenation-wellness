@@ -22,7 +22,7 @@ export const BeforeAfterSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.6, delay: (i % 3) * 0.12 }}
-              className="break-inside-avoid bg-white border border-[#484774]/10 group shadow-sm hover:shadow-md transition-shadow"
+              className="break-inside-avoid bg-white rounded-3xl overflow-hidden border border-[#484774]/10 group shadow-sm hover:shadow-xl transition-all duration-300"
             >
               <div className="relative overflow-hidden bg-[#f0efec]">
                 <Image

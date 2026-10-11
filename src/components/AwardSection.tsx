@@ -26,7 +26,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] overflow-hidden shadow-[0_25px_50px_-12px_rgba(72,71,116,0.25)] border border-[#484774]/10 bg-stone-200">
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] overflow-hidden rounded-3xl shadow-[0_25px_50px_-12px_rgba(72,71,116,0.25)] border border-[#484774]/10 bg-stone-200">
               <Image
                 src="/fotos_webp/ledy_award.webp"
                 alt="Ledy, founder of Essenccia Rejuvenation & Wellness, receiving the Best of 2026 Day Spa award"
@@ -37,7 +37,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               />
 
               {/* Editorial bottom overlay */}
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#484774]/90 via-[#484774]/40 to-transparent p-6 text-white">
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#484774]/95 via-[#484774]/50 to-transparent p-6 text-white">
                 <div className="flex items-center gap-2">
                   <div className="flex text-[#d7a761]">
                     {[...Array(5)].map((_, i) => (
@@ -58,7 +58,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.7 }}
-              className="absolute -bottom-8 -right-4 sm:-right-8 bg-[#484774] text-white p-5 sm:p-6 shadow-[0_20px_40px_-15px_rgba(72,71,116,0.5)] border-2 border-[#d7a761]/40 max-w-[260px]"
+              className="absolute -bottom-8 -right-4 sm:-right-8 bg-[#484774] text-white p-5 sm:p-6 rounded-2xl shadow-[0_20px_40px_-15px_rgba(72,71,116,0.5)] border-2 border-[#d7a761]/40 max-w-[260px]"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#d7a761]/20 flex items-center justify-center shrink-0 border border-[#d7a761]/50">
@@ -89,7 +89,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
           >
             {/* Eyebrow and Program Tag */}
             <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#484774]/10 border border-[#484774]/20 text-[10px] uppercase tracking-[0.25em] font-semibold text-[#484774]">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#484774]/10 border border-[#484774]/20 text-[10px] uppercase tracking-[0.22em] font-semibold text-[#484774]">
                 <Sparkles className="w-3.5 h-3.5 text-[#d7a761]" />
                 BusinessRate Benchmark Recognition
               </div>
@@ -118,7 +118,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
 
             {/* Recognition Metrics Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-[#484774]/15">
-              <div className="p-4 bg-white/70 border border-[#484774]/10">
+              <div className="p-5 rounded-2xl bg-white/80 border border-[#484774]/10 shadow-xs">
                 <div className="flex items-center gap-1.5 text-[#d7a761]">
                   <Star className="w-4 h-4 fill-current" />
                   <span className="font-serif text-2xl font-light text-[#484774] tabular-nums">5.0</span>
@@ -127,7 +127,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
                 <p className="text-[11px] text-[#484774] mt-0.5 font-medium">100% Verified Reviews</p>
               </div>
 
-              <div className="p-4 bg-white/70 border border-[#484774]/10">
+              <div className="p-5 rounded-2xl bg-white/80 border border-[#484774]/10 shadow-xs">
                 <div className="flex items-center gap-1.5 text-[#484774]">
                   <ShieldCheck className="w-4 h-4 text-[#d7a761]" />
                   <span className="font-serif text-2xl font-light text-[#484774]">Benchmark</span>
@@ -136,7 +136,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
                 <p className="text-[11px] text-[#484774] mt-0.5 font-medium">BusinessRate Program</p>
               </div>
 
-              <div className="p-4 bg-white/70 border border-[#484774]/10">
+              <div className="p-5 rounded-2xl bg-white/80 border border-[#484774]/10 shadow-xs">
                 <div className="flex items-center gap-1.5 text-[#484774]">
                   <CheckCircle2 className="w-4 h-4 text-[#d7a761]" />
                   <span className="font-serif text-2xl font-light text-[#484774] tabular-nums">23+</span>
@@ -151,14 +151,14 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               <div className="pt-2 flex flex-wrap items-center gap-4">
                 <button
                   onClick={onOpenBooking}
-                  className="group inline-flex items-center gap-3 px-7 py-3.5 bg-[#484774] hover:bg-[#3b3a63] text-white text-[11px] uppercase tracking-[0.2em] font-medium transition-colors shadow-sm"
+                  className="group inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-[#484774] hover:bg-[#3b3a63] text-white text-xs uppercase tracking-[0.18em] font-medium transition-all shadow-md hover:shadow-lg hover:scale-[1.02]"
                 >
-                  Experience Award-Winning Care
+                  <span>Experience Award-Winning Care</span>
                   <ArrowRight className="w-4 h-4 text-[#d7a761] transition-transform group-hover:translate-x-1" />
                 </button>
                 <a
                   href="#facilities"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 border border-[#484774]/25 hover:border-[#484774] text-[#484774] text-[11px] uppercase tracking-[0.2em] font-medium transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-[#484774]/25 hover:border-[#484774] bg-white/60 hover:bg-white text-[#484774] text-xs uppercase tracking-[0.18em] font-medium transition-all hover:scale-[1.02]"
                 >
                   Tour The Facility
                 </a>

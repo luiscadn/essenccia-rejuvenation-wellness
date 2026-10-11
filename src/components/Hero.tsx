@@ -13,31 +13,31 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
     <section id="top" className="relative bg-[#f7f7f4] overflow-hidden scroll-mt-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 lg:pt-16 pb-20 lg:pb-28">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6 items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-7 lg:pb-8 space-y-9 relative z-10"
+            className="lg:col-span-7 lg:pb-4 space-y-9 relative z-10"
           >
-            {/* Badges row including the Best of 2026 Winner pill */}
+            {/* Soft, rounded badges row */}
             <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
               <a
                 href="#award"
-                className="group inline-flex items-center gap-2 bg-[#484774] text-white px-3.5 py-1.5 text-[10px] uppercase tracking-[0.22em] font-medium hover:bg-[#3b3a63] transition-colors border border-[#d7a761]/40 shadow-sm"
+                className="group inline-flex items-center gap-2 bg-[#484774] text-white px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium hover:bg-[#3b3a63] transition-all border border-[#d7a761]/40 shadow-sm hover:scale-[1.02]"
               >
                 <Award className="w-3.5 h-3.5 text-[#d7a761] group-hover:scale-110 transition-transform" />
                 <span>Best of 2026 Day Spa Winner</span>
                 <span className="text-[#d7a761] font-semibold">· Westport, CT</span>
               </a>
 
-              <span className="inline-flex items-center gap-2 border border-[#484774]/15 bg-white px-3.5 py-1.5 text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774]">
+              <span className="inline-flex items-center gap-2 border border-[#484774]/15 bg-white px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774] shadow-xs">
                 <MapPin className="w-3 h-3 text-[#d7a761]" aria-hidden="true" />
                 25 Sylvan Rd S
               </span>
 
-              <span className="inline-flex items-center gap-2 border border-[#d7a761]/50 bg-white/80 px-3.5 py-1.5 text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774] tabular-nums">
+              <span className="inline-flex items-center gap-2 border border-[#d7a761]/40 bg-[#d7a761]/10 px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774] tabular-nums">
                 23+ Years Mastery
               </span>
             </div>
@@ -52,29 +52,29 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               Non-surgical skin tightening, nano-needling and body sculpting, guided by more than two decades of medical aesthetic practice and an unhurried, individual approach.
             </p>
 
-            {/* CTA action buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+            {/* Soft, rounded luxury CTA buttons */}
+            <div className="flex flex-wrap items-center gap-3 pt-3">
               <button
                 onClick={onOpenBooking}
-                className="group inline-flex items-center justify-center gap-4 px-8 py-4 bg-[#484774] hover:bg-[#3b3a63] text-[#f7f7f4] text-[11px] uppercase tracking-[0.2em] font-medium transition-colors focus-visible:ring-2 focus-visible:ring-[#739cd2] focus-visible:ring-offset-2 shadow-sm"
+                className="group inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#484774] hover:bg-[#3b3a63] text-[#f7f7f4] text-xs uppercase tracking-[0.16em] font-medium transition-all shadow-md hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-[#739cd2]"
               >
-                Reserve a consultation
-                <ArrowRight className="w-4 h-4 text-[#d7a761] transition-transform group-hover:translate-x-1" />
+                <span>Reserve Consultation</span>
+                <ArrowRight className="w-3.5 h-3.5 text-[#d7a761] transition-transform group-hover:translate-x-1" />
               </button>
 
               <a
                 href="#facilities"
-                className="group inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-white hover:bg-stone-50 border border-[#484774]/20 hover:border-[#484774] text-[#484774] text-[11px] uppercase tracking-[0.2em] font-medium transition-colors"
+                className="group inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-white hover:bg-stone-50 border border-[#484774]/20 hover:border-[#484774] text-[#484774] text-xs uppercase tracking-[0.16em] font-medium shadow-xs hover:shadow transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                <Play className="w-3.5 h-3.5 text-[#d7a761] fill-current group-hover:scale-110 transition-transform" />
-                Watch Sanctuary Tour
+                <Play className="w-3 h-3 text-[#d7a761] fill-current group-hover:scale-110 transition-transform" />
+                <span>Sanctuary Tour</span>
               </a>
 
               <a
                 href="#treatments"
-                className="inline-flex items-center justify-center px-6 py-4 border border-transparent hover:border-[#484774]/20 text-[#484774] text-[11px] uppercase tracking-[0.2em] font-medium transition-colors"
+                className="inline-flex items-center justify-center px-5 py-3.5 rounded-full bg-[#484774]/5 hover:bg-[#484774]/12 text-[#484774] text-xs uppercase tracking-[0.16em] font-medium transition-all hover:scale-[1.02] border border-transparent hover:border-[#484774]/15"
               >
-                Treatments
+                <span>Treatments</span>
               </a>
             </div>
           </motion.div>
@@ -85,7 +85,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden shadow-[0_20px_40px_-20px_rgba(72,71,116,0.3)]">
+            <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-3xl shadow-[0_25px_50px_-20px_rgba(72,71,116,0.35)] border border-[#484774]/10">
               <Image
                 src="/images/hero-clinic.jpg"
                 alt="Treatment room at Essenccia Rejuvenation & Wellness in Westport, CT"
@@ -96,19 +96,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               />
             </div>
             
-            <div className="hidden lg:block absolute -left-16 -bottom-8 w-56 aspect-square overflow-hidden border-8 border-[#f7f7f4] shadow-lg">
+            <div className="hidden lg:block absolute -left-14 -bottom-6 w-52 aspect-square overflow-hidden rounded-2xl border-4 border-white shadow-xl">
               <Image
                 src="/images/ledy-treatment.jpg"
                 alt="Ledy performing a clinical facial treatment"
                 fill
-                sizes="224px"
+                sizes="208px"
                 className="object-cover"
               />
             </div>
 
-            <div className="absolute top-6 -right-0 sm:right-6 bg-[#484774] text-[#f7f7f4] px-5 py-4 border-b-2 border-[#d7a761] shadow-md">
-              <p className="font-serif text-4xl font-light leading-none tabular-nums">23<span className="text-[#d7a761]">+</span></p>
-              <p className="mt-2 text-[9px] uppercase tracking-[0.2em] text-[#a2a1ba]">Years of mastery</p>
+            <div className="absolute top-6 right-6 bg-[#484774]/95 backdrop-blur-md text-[#f7f7f4] px-5 py-4 rounded-2xl border border-[#d7a761]/40 shadow-lg">
+              <p className="font-serif text-3xl font-light leading-none tabular-nums">23<span className="text-[#d7a761]">+</span></p>
+              <p className="mt-1.5 text-[9px] uppercase tracking-[0.2em] text-[#a2a1ba]">Years of mastery</p>
             </div>
           </motion.div>
 

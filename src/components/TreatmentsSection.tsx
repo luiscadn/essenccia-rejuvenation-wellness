@@ -70,7 +70,7 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="group bg-white border border-[#484774]/10 flex flex-col shadow-sm hover:shadow-md transition-shadow"
+                className="group bg-white rounded-3xl overflow-hidden border border-[#484774]/10 flex flex-col shadow-sm hover:shadow-xl transition-all duration-300"
               >
                 <div className="relative aspect-[16/10] overflow-hidden bg-[#f0efec]">
                   <Image
@@ -81,7 +81,7 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                   {t.badge && (
-                    <span className="absolute top-4 left-4 bg-[#f7f7f4] px-3 py-1.5 text-[9px] uppercase tracking-[0.2em] font-semibold text-[#484774] shadow-sm">
+                    <span className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[9px] uppercase tracking-[0.2em] font-semibold text-[#484774] shadow-xs">
                       {t.badge}
                     </span>
                   )}
@@ -103,13 +103,13 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({
                   <div className="mt-auto pt-4 grid grid-cols-2 gap-3">
                     <button
                       onClick={() => onSelectTreatment(t)}
-                      className="py-3 border border-[#484774]/25 hover:border-[#484774] text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774] transition-colors"
+                      className="py-3 rounded-full border border-[#484774]/25 hover:border-[#484774] text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774] transition-all hover:bg-stone-50"
                     >
                       The science
                     </button>
                     <button
                       onClick={() => onBookTreatment(t)}
-                      className="py-3 bg-[#484774] hover:bg-[#3b3a63] text-[10px] uppercase tracking-[0.2em] font-medium text-[#f7f7f4] transition-colors"
+                      className="py-3 rounded-full bg-[#484774] hover:bg-[#3b3a63] text-[10px] uppercase tracking-[0.2em] font-medium text-[#f7f7f4] transition-all shadow-xs"
                     >
                       Reserve
                     </button>
