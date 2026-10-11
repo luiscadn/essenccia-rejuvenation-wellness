@@ -16,7 +16,7 @@ export const PromisesSection: React.FC = () => {
           Four promises at <span className="italic text-[#739cd2]">every</span> consultation
         </SectionHeading>
 
-        {/* Freestanding, soft floating rounded cards (No rigid square grid boxes) */}
+        {/* Freestanding, soft floating rounded cards (No numbers, large legible typography) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {PROMISES.map((p, i) => {
             const IconComponent = PROMISE_ICONS[i] || Sparkles;
@@ -28,32 +28,31 @@ export const PromisesSection: React.FC = () => {
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{ duration: 0.6, delay: i * 0.12 }}
                 whileHover={{ y: -6 }}
-                className="group relative bg-white/95 rounded-[2rem] p-8 lg:p-9 flex flex-col justify-between border border-[#484774]/10 shadow-[0_15px_35px_-15px_rgba(72,71,116,0.08)] hover:shadow-[0_25px_50px_-15px_rgba(72,71,116,0.18)] transition-all duration-300"
+                className="group relative bg-white rounded-[2.2rem] p-8 sm:p-9 lg:p-10 flex flex-col justify-between border border-[#484774]/12 shadow-[0_15px_35px_-15px_rgba(72,71,116,0.08)] hover:shadow-[0_25px_50px_-15px_rgba(72,71,116,0.18)] transition-all duration-300"
               >
-                {/* Top header with circular badge and icon */}
-                <div className="flex items-center justify-between pb-6 border-b border-[#484774]/5">
-                  <div className="w-12 h-12 rounded-full bg-[#f7f7f4] border border-[#d7a761]/40 flex items-center justify-center text-[#d7a761] shadow-xs group-hover:scale-110 transition-transform">
-                    <span className="font-serif italic text-lg font-light tabular-nums">0{i + 1}</span>
+                <div>
+                  {/* Distinctive Icon Badge (No number) */}
+                  <div className="w-14 h-14 rounded-2xl bg-[#484774]/5 border border-[#484774]/10 flex items-center justify-center text-[#d7a761] group-hover:bg-[#484774] group-hover:scale-105 transition-all duration-300 shadow-xs mb-7">
+                    <IconComponent className="w-6 h-6 text-[#d7a761] transition-transform" />
                   </div>
-                  <div className="w-9 h-9 rounded-full bg-[#484774]/5 flex items-center justify-center text-[#484774] group-hover:text-[#739cd2] transition-colors">
-                    <IconComponent className="w-4 h-4" />
-                  </div>
-                </div>
 
-                {/* Content */}
-                <div className="pt-6 space-y-3 flex-1 flex flex-col">
-                  <h3 className="font-serif text-2xl font-light leading-snug text-[#484774] group-hover:text-[#739cd2] transition-colors">
+                  {/* Large, High-Legibility Title */}
+                  <h3 className="font-serif text-3xl sm:text-[2rem] font-normal leading-[1.15] text-[#484774] group-hover:text-[#739cd2] transition-colors">
                     {p.title}
                   </h3>
-                  <p className="text-sm leading-relaxed tracking-[0.03em] text-[#5c6c84] font-light mt-auto pt-2">
+
+                  {/* Large, High-Contrast Description */}
+                  <p className="mt-4 text-base sm:text-lg leading-relaxed tracking-[0.01em] text-[#484774]/90 font-normal">
                     {p.text}
                   </p>
                 </div>
 
                 {/* Bottom delicate accent dot */}
-                <div className="pt-6 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#d7a761]" />
-                  <span className="text-[9px] uppercase tracking-[0.2em] font-medium text-[#484774]">The Essenccia Way</span>
+                <div className="pt-8 mt-6 border-t border-[#484774]/8 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#d7a761]" />
+                  <span className="text-[11px] uppercase tracking-[0.2em] font-medium text-[#484774]">
+                    Our Commitment
+                  </span>
                 </div>
               </motion.div>
             );
