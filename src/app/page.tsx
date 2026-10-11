@@ -20,12 +20,17 @@ import { CartDrawer } from '@/components/CartDrawer';
 import { BookingModal } from '@/components/BookingModal';
 import { TreatmentDetailModal } from '@/components/TreatmentDetailModal';
 import { ToastNotification } from '@/components/ToastNotification';
-import { Treatment } from '@/data/clinic-data';
+import { CaviLipoFaqModal } from '@/components/CaviLipoFaqModal';
+import { PolicyModal } from '@/components/PolicyModal';
+import { Treatment, TREATMENTS } from '@/data/clinic-data';
 
 export default function HomePage() {
   const [bookingOpen, setBookingOpen] = useState(false);
   const [selectedTreatmentForBooking, setSelectedTreatmentForBooking] = useState<Treatment | null>(null);
   const [detailTreatment, setDetailTreatment] = useState<Treatment | null>(null);
+
+  const [faqOpen, setFaqOpen] = useState(false);
+  const [policyOpen, setPolicyOpen] = useState(false);
 
   const handleOpenBooking = (treatment?: Treatment) => {
     setSelectedTreatmentForBooking(treatment || null);
@@ -56,7 +61,15 @@ export default function HomePage() {
       </a>
 
       {/* Primary Sticky Header */}
-      <Navbar onOpenBooking={() => handleOpenBooking()} />
+      <Navbar
+        onOpenBooking={() => handleOpenBooking()}
+        onSelectTreatment={(id) => {
+          const treatment = TREATMENTS.find((t) => t.id === id);
+          if (treatment) handleViewDetail(treatment);
+        }}
+        onOpenFaq={() => setFaqOpen(true)}
+        onOpenPolicy={() => setPolicyOpen(true)}
+      />
 
       {/* Main Content Landmark */}
       <main id="main-content" className="flex-1">
@@ -97,6 +110,9 @@ export default function HomePage() {
         onClose={handleCloseDetail}
         onBook={(treatment) => handleOpenBooking(treatment)}
       />
+
+      <CaviLipoFaqModal isOpen={faqOpen} onClose={() => setFaqOpen(false)} onBook={() => handleOpenBooking()} />
+      <PolicyModal isOpen={policyOpen} onClose={() => setPolicyOpen(false)} />
 
       {/* Tactile Micro-Notification */}
       <ToastNotification />

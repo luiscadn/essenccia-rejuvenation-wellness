@@ -16,6 +16,13 @@ export const TreatmentDetailModal: React.FC<TreatmentDetailModalProps> = ({
   onClose,
   onBook,
 }) => {
+  React.useEffect(() => {
+    if (!treatment) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [treatment, onClose]);
+
   if (!treatment) return null;
 
   return (

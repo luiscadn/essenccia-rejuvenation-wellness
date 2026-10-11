@@ -201,6 +201,101 @@ export const TREATMENTS: Treatment[] = [
     image: '/images/facial-treatment.jpg',
   },
   {
+    id: 'jawline-sculpt-lift',
+    name: 'Jawline Sculpt & Lift (Cavi-Lipo + RF Combo)',
+    category: 'face',
+    duration: '1 hr',
+    price: 'Consultation',
+    numericPrice: 0,
+    badge: 'Signature Neck Lift',
+    shortDesc: 'Our signature non-invasive neck lift refining the lower face, jowls, and neck by lifting, tightening, and smoothing.',
+    fullDesc: 'A signature combination of Cavi-Lipo ultrasound and radiofrequency designed to refine the contours of the lower face, jowls, and neck. By lifting, tightening, and smoothing, it restores elegance and balance to your natural profile: a rejuvenation that reflects your true essence.',
+    benefits: [
+      'Defines the jawline and softens the double chin',
+      'Lifts and tightens jowls and neck tissue',
+      'Smoothes the lower-face contour with zero downtime',
+      'Non-surgical and fully personalized'
+    ],
+    tech: 'Cavi-Lipo Ultrasound + Radiofrequency Combination',
+    image: '/fotos_webp/rf_tightening.webp',
+  },
+  {
+    id: 'advanced-deep-pore-renewal',
+    name: 'Advanced Deep Pore Renewal',
+    category: 'face',
+    duration: '1 hr',
+    price: '$125',
+    numericPrice: 125,
+    badge: 'All Skin Types',
+    shortDesc: 'A customized deep-cleansing facial with clinical skin evaluation, exfoliation, aromatic massage, and a finishing mask.',
+    fullDesc: 'This customized deep cleansing facial is designed for all skin types. It begins with a comprehensive clinical evaluation of the skin, followed by deep pore cleansing, exfoliation, a relaxing aromatic massage, and a final treatment mask. Your skin will feel supple, smooth, refreshed, and completely nourished.',
+    benefits: [
+      'Deep pore cleansing and purification',
+      'Gentle exfoliation for smooth, refreshed skin',
+      'Relaxing aromatic massage',
+      'Included in the VIP Special'
+    ],
+    tech: 'Clinical Skin Evaluation & Hydro-Purifying Protocol',
+    image: '/images/facial-treatment.jpg',
+  },
+  {
+    id: 'targeted-fat-reduction',
+    name: 'Targeted Fat Reduction Therapy',
+    category: 'body',
+    duration: '30 min',
+    price: 'From $200',
+    numericPrice: 200,
+    badge: 'Packages Available',
+    shortDesc: 'Ultrasound cavitation creating microscopic bubbles in fat cells, eliminated naturally through the lymphatic system.',
+    fullDesc: 'Cavi-Lipo uses ultrasound waves to create microscopic bubbles in fat cells, causing them to break down through cavitation. The body then naturally eliminates the released fat via the lymphatic system. One treatment $200; five treatments $650 ($130 each); ten treatments $1,000 ($100 each).',
+    benefits: [
+      'Reduces stubborn localized fat deposits',
+      'Package pricing: 5 sessions $650, 10 sessions $1,000',
+      'No surgery, no anesthesia, no downtime',
+      'Supports body contour and cellulite therapy'
+    ],
+    tech: 'Ultrasound Cavitation (Cavi-Lipo)',
+    image: '/fotos_webp/cavi_lipo.webp',
+  },
+  {
+    id: 'muscle-tone-zerobody',
+    name: 'Muscle Tone & Firming (ZeroBody Microcurrent)',
+    category: 'body',
+    duration: '20 min',
+    price: 'From $150',
+    numericPrice: 150,
+    badge: 'Electrotherapy',
+    shortDesc: 'Low-level microcurrent that stimulates cellular activity, enhances muscle tone, and improves skin elasticity.',
+    fullDesc: 'ZeroBody technology utilizes microcurrent therapy to deliver low-level electrical currents that stimulate cellular activity, enhance muscle tone, improve skin elasticity, and promote a rejuvenated appearance. One area $150 (20 min); four areas $300 ($75 per session); eight areas $480 ($60 per session).',
+    benefits: [
+      'Enhances muscle tone and definition',
+      'Improves skin elasticity',
+      'Supports natural healing and skin revitalization',
+      'Series pricing: 4 areas $300, 8 areas $480'
+    ],
+    tech: 'ZeroBody Microcurrent Therapy',
+    image: '/fotos_webp/body_sculpt.webp',
+  },
+  {
+    id: 'microcurrent-cellular-care',
+    name: 'Microcurrent Cellular Care & Lymphatic Drainage',
+    category: 'wellness',
+    duration: '20 min',
+    price: 'From $150',
+    numericPrice: 150,
+    badge: 'Lymphatic Support',
+    shortDesc: 'Gentle microcurrent stimulation to support lymphatic flow, cellular energy, and skin revitalization.',
+    fullDesc: 'Low-level electrical currents stimulate cellular activity and support the lymphatic system, promoting natural healing, circulation, and a rejuvenated appearance. A restorative complement to body and facial protocols.',
+    benefits: [
+      'Supports lymphatic drainage and circulation',
+      'Stimulates cellular activity',
+      'Promotes natural healing and revitalization',
+      'Comfortable and relaxing'
+    ],
+    tech: 'ZeroBody Microcurrent Therapy',
+    image: '/fotos_webp/hydroveil.webp',
+  },
+  {
     id: 'free-personalized-consultation',
     name: 'Complimentary 1-on-1 Skin & Body Consultation',
     category: 'face',
@@ -395,4 +490,50 @@ export const BEFORE_AFTER = [
   { image: '/fotos_webp/before_after_4.webp', treatment: 'Viora RF Lift & Tighten', goal: 'Jawline definition', result: 'Subtle lift along the jawline.' },
   { image: '/fotos_webp/before_after_5.webp', treatment: 'Rezenerate Nano-Needling', goal: 'Forehead lines and texture', result: 'Softer lines and refined texture.' },
   { image: '/fotos_webp/before_after_6.webp', treatment: 'Infusion Electro-Mesotherapy', goal: 'Hydration and eye-area rejuvenation', result: 'Rested, hydrated appearance.' },
+];
+
+export const CAVI_LIPO_FAQ = [
+  {
+    question: 'What is Cavi-Lipo?',
+    answer: 'A non-invasive and one of the most advanced and efficient systems using ultrasound technology to break down fat cells by targeting and reducing stubborn fat deposits. Great for men and women who want to reduce fat deposits on the double chin, belly, thighs, hips, breasts, upper arms, or any other trouble area.',
+  },
+  {
+    question: 'Why is it called Cavi-Lipo?',
+    answer: 'The therapy uses low-level ultrasound to emulsify fat. Cavitation means the breaking down of the fatty tissue. Noninvasive, non-surgical “liposuction” means the fat is removed in a natural fashion through the lymphatic and urinary systems, at the pace your body can tolerate.',
+  },
+  {
+    question: 'What are the benefits?',
+    answer: 'Decreased circumference in the target area; enhanced body tone and contour; improved skin tone and texture; blood and lymphatic circulation; excellent cellulite therapy; connective tissue tightening; detoxification and cleansing; full body oxygenation therapy. No surgery, no anesthesia, no pain, no downtime.',
+  },
+  {
+    question: 'What are the contraindications?',
+    answer: 'Individuals with acute or contagious disease, HIV, a history of cancer, kidney failure, liver failure, fatty liver, implant devices such as pacemakers or electrical prosthesis, epilepsy or MS should not undergo Cavi-Lipo. Pregnancy and breast-feeding are also contraindications. Anyone with active contagious skin conditions will not be allowed to undergo treatments. It is best to wait three to six months after a surgical procedure in the target area.',
+  },
+  {
+    question: 'Why can’t I have caffeine or alcohol 48 hours before or after a treatment?',
+    answer: 'Alcohol and caffeine interfere with the lymphatic process that removes and metabolizes fat, which can decrease your results.',
+  },
+];
+
+export const SPA_POLICIES = [
+  {
+    title: 'Cancellations',
+    text: '24 hour notice is required for a cancellation and will help us reschedule your appointment. We take our appointments very seriously. Please arrive at least 15 minutes before your appointment to ensure a full treatment session.',
+  },
+  {
+    title: 'Noise',
+    text: 'To maintain the peaceful sanctuary of the spa, we request that all visitors maintain conversations at a considerate volume. All mobile phones and electronic devices must be placed on silence mode. Gently closing the doors also maintains tranquility. We appreciate your consideration.',
+  },
+  {
+    title: 'Children',
+    text: 'Children are not allowed in the spa. A spa room is only appropriate for you and your therapist. If it is absolutely necessary to have your child with you, please be respectful of other people’s privacy.',
+  },
+  {
+    title: 'Pets',
+    text: 'No pets are allowed per the health department.',
+  },
+  {
+    title: 'Text Messages & Privacy',
+    text: 'By texting START or YES to 203-486-8989 you consent to receive text messages from Essenccia Rejuvenation & Wellness. Consent is not a condition of purchase. Message frequency varies; message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Your mobile opt-in information is never shared with anyone, and your information is only used for updates, promotions, appointment reminders, and communications related to our services.',
+  },
 ];
