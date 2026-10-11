@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowRight, MapPin, Award, Play } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -12,35 +12,15 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
     <section id="top" className="relative bg-[#f7f7f4] overflow-hidden scroll-mt-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 lg:pt-16 pb-20 lg:pb-28">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 lg:pt-20 pb-20 lg:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-7 lg:pb-4 space-y-9 relative z-10"
+            className="lg:col-span-7 lg:pb-4 space-y-8 relative z-10"
           >
-            {/* Soft, rounded badges row */}
-            <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
-              <a
-                href="#award"
-                className="group inline-flex items-center gap-2 bg-[#484774] text-white px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium hover:bg-[#3b3a63] transition-all border border-[#d7a761]/40 shadow-sm hover:scale-[1.02]"
-              >
-                <Award className="w-3.5 h-3.5 text-[#d7a761] group-hover:scale-110 transition-transform" />
-                <span>Best of 2026 Day Spa Winner</span>
-                <span className="text-[#d7a761] font-semibold">· Westport, CT</span>
-              </a>
-
-              <span className="inline-flex items-center gap-2 border border-[#484774]/15 bg-white px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774] shadow-xs">
-                <MapPin className="w-3 h-3 text-[#d7a761]" aria-hidden="true" />
-                25 Sylvan Rd S
-              </span>
-
-              <span className="inline-flex items-center gap-2 border border-[#d7a761]/40 bg-[#d7a761]/10 px-4 py-1.5 rounded-full text-[10px] uppercase tracking-[0.2em] font-medium text-[#484774] tabular-nums">
-                23+ Years Mastery
-              </span>
-            </div>
 
             {/* Editorial Main Headline */}
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[5.5rem] font-light leading-[1.02] tracking-tight text-[#484774] text-balance">

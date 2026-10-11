@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Award, Star, ShieldCheck, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Award, Star, ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
 
 interface AwardSectionProps {
   onOpenBooking?: () => void;
@@ -87,16 +87,10 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-7 space-y-8"
           >
-            {/* Eyebrow and Program Tag */}
-            <div className="space-y-3">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#484774]/10 border border-[#484774]/20 text-[10px] uppercase tracking-[0.22em] font-semibold text-[#484774]">
-                <Sparkles className="w-3.5 h-3.5 text-[#d7a761]" />
-                BusinessRate Benchmark Recognition
-              </div>
-              <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.08] text-[#484774] text-balance">
-                Voted <span className="italic text-[#739cd2]">Best of 2026</span> in Westport, Connecticut
-              </h2>
-            </div>
+            {/* Main Section Heading */}
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.08] text-[#484774] text-balance">
+              Voted <span className="italic text-[#739cd2]">Best of 2026</span> in Westport, Connecticut
+            </h2>
 
             <p className="font-serif text-xl sm:text-2xl text-[#484774]/90 font-light leading-relaxed italic">
               &ldquo;An authentic validation from our clients, honoring two decades of regenerative beauty and bespoke care.&rdquo;

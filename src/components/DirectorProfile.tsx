@@ -68,10 +68,10 @@ export const DirectorProfile: React.FC = () => {
               <Award className="w-5 h-5 text-[#d7a761] shrink-0" />
               <div>
                 <p className="text-[11px] uppercase tracking-[0.2em] font-semibold text-[#484774]">
-                  Recognized by BusinessRate Benchmark
+                  Best of 2026 Day Spa Winner
                 </p>
                 <p className="text-xs text-[#5c6c84]">
-                  Named Best of 2026 Day Spa in Westport, Connecticut.
+                  Voted Best Day Spa in Westport, Connecticut.
                 </p>
               </div>
             </div>
