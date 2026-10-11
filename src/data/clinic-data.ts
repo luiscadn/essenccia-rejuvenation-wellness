@@ -105,7 +105,7 @@ export const TREATMENTS: Treatment[] = [
       'Clinically softens acne scarring and discoloration'
     ],
     tech: 'Italian Medical Formula (TCA 33% + H2O2 + Kojic Acid)',
-    image: '/images/ledy-treatment.jpg',
+    image: '/images/treatment-prx-t33.jpg',
   },
   {
     id: 'infusion-electro-mesotherapy',
@@ -124,7 +124,7 @@ export const TREATMENTS: Treatment[] = [
       'Pain-free needleless mesotherapy'
     ],
     tech: 'IonWave™ Electro-Mesotherapy Technology',
-    image: '/images/facial-treatment.jpg',
+    image: '/images/treatment-mesotherapy.jpg',
   },
   {
     id: 'body-contouring-cellulite',
@@ -143,7 +143,7 @@ export const TREATMENTS: Treatment[] = [
       'Comfortable treatment akin to a deep warm massage'
     ],
     tech: 'CORE™ Multi-Frequency Vacuum Radiofrequency',
-    image: '/fotos_webp/body_sculpt.webp',
+    image: '/images/treatment-cellulite.jpg',
   },
   {
     id: 'hydrogen-inhalation-led',
@@ -181,7 +181,7 @@ export const TREATMENTS: Treatment[] = [
       'Synergizes with skincare treatments for accelerated healing'
     ],
     tech: 'Clinical Low-Frequency PEMF Bio-Regenerator',
-    image: '/images/hero-clinic.jpg',
+    image: '/images/treatment-pemf.jpg',
   },
   {
     id: 'diamond-resurfacing',
@@ -198,7 +198,7 @@ export const TREATMENTS: Treatment[] = [
       'Prepares skin for deeper nutrient absorption'
     ],
     tech: 'Medical Diamond-Tip Controlled Vacuum Resurfacing',
-    image: '/images/facial-treatment.jpg',
+    image: '/images/treatment-microdermabrasion.jpg',
   },
   {
     id: 'jawline-sculpt-lift',
@@ -217,7 +217,7 @@ export const TREATMENTS: Treatment[] = [
       'Non-surgical and fully personalized'
     ],
     tech: 'Cavi-Lipo Ultrasound + Radiofrequency Combination',
-    image: '/fotos_webp/rf_tightening.webp',
+    image: '/images/treatment-jawline-lift.jpg',
   },
   {
     id: 'advanced-deep-pore-renewal',
@@ -236,7 +236,7 @@ export const TREATMENTS: Treatment[] = [
       'Included in the VIP Special'
     ],
     tech: 'Clinical Skin Evaluation & Hydro-Purifying Protocol',
-    image: '/images/facial-treatment.jpg',
+    image: '/images/treatment-deep-pore.jpg',
   },
   {
     id: 'targeted-fat-reduction',
@@ -255,7 +255,7 @@ export const TREATMENTS: Treatment[] = [
       'Supports body contour and cellulite therapy'
     ],
     tech: 'Ultrasound Cavitation (Cavi-Lipo)',
-    image: '/fotos_webp/cavi_lipo.webp',
+    image: '/fotos_webp/19e9e2_ec496819efed47f1bf5c728e126a70d6~mv2.webp',
   },
   {
     id: 'muscle-tone-zerobody',
@@ -274,7 +274,7 @@ export const TREATMENTS: Treatment[] = [
       'Series pricing: 4 areas $300, 8 areas $480'
     ],
     tech: 'ZeroBody Microcurrent Therapy',
-    image: '/fotos_webp/body_sculpt.webp',
+    image: '/fotos_webp/19e9e2_8a856c4ff78c44ae8807be483df73025~mv2.webp',
   },
   {
     id: 'microcurrent-cellular-care',
@@ -293,7 +293,7 @@ export const TREATMENTS: Treatment[] = [
       'Comfortable and relaxing'
     ],
     tech: 'ZeroBody Microcurrent Therapy',
-    image: '/fotos_webp/hydroveil.webp',
+    image: '/fotos_webp/19e9e2_ee52b20920f5459c9e094f48af3015bf~mv2.webp',
   },
   {
     id: 'free-personalized-consultation',
@@ -312,7 +312,7 @@ export const TREATMENTS: Treatment[] = [
       'No obligation, zero pressure'
     ],
     tech: 'Clinical Digital Skin Diagnostic & Expert Palpation',
-    image: '/images/ledy-treatment.jpg',
+    image: '/images/treatment-consultation.jpg',
   }
 ];
 
@@ -330,7 +330,7 @@ export const PRODUCTS: Product[] = [
     description: 'An ultra-pure elixir formulated with bioactive plant stem cells, copper tripeptides (GHK-Cu), and triple-molecular hyaluronic acid. Penetrates deeply to accelerate cellular regeneration, boost collagen density, and restore plump resilience.',
     keyIngredients: ['Bioactive Alpine Rose Stem Cells', 'Copper Tripeptide-1 (1.5%)', 'Multi-Weight Hyaluronic Acid', 'Niacinamide (5%)'],
     howToUse: 'Dispense 4-5 drops onto cleansed skin morning and evening. Gently press into face, neck, and décolleté before moisturizer.',
-    image: '/images/products-line.jpg',
+    image: '/images/product-stem-serum.jpg',
   },
   {
     id: 'cellular-renewal-cream',
@@ -344,7 +344,7 @@ export const PRODUCTS: Product[] = [
     description: 'A velvet, moisture-locking cream mimicking your skin’s natural lipid matrix. Formulated with five identical ceramides, soothing squalane, and gentle plant bakuchiol to rebuild damaged barriers post-treatment.',
     keyIngredients: ['Ceramide Complex (NP, AP, EOP)', 'Phyto-Squalane', 'Bakuchiol (1.0%)', 'Centella Asiatica (Cica)'],
     howToUse: 'Warm a pearl-sized amount between fingertips and smooth evenly across face and neck after serum.',
-    image: '/images/products-line.jpg',
+    image: '/images/product-barrier-cream.jpg',
   },
   {
     id: 'hydra-nutrition-elixir',
@@ -358,7 +358,7 @@ export const PRODUCTS: Product[] = [
     description: 'A weightless dry nectar oil infused with cold-pressed prickly pear seed, marula, and meadowfoam seed oils. Shields against environmental pollutants while sealing in luminous moisture.',
     keyIngredients: ['Prickly Pear Seed Oil', 'Organic Marula Oil', 'Vitamin E Tocopherol', 'Blue Tansy Oil'],
     howToUse: 'Press 2-3 drops as the final step of your nighttime routine, or mix with foundation for an ethereal luminous glow.',
-    image: '/images/products-line.jpg',
+    image: '/images/product-recovery-oil.jpg',
   },
   {
     id: 'hydra-foam-cleanser',
@@ -371,7 +371,7 @@ export const PRODUCTS: Product[] = [
     description: 'A luxurious cloud-like foam cleanser formulated with gentle amino-acid surfactants that dissolves sebum, sunscreen, and pollutants without stripping vital epidermal moisture.',
     keyIngredients: ['Apple Amino Acids', 'Chamomile Floral Hydrolat', 'Allantoin', 'Colloidal Oatmeal'],
     howToUse: 'Pump 1-2 times onto damp hands, massage in circular motions across face for 60 seconds, and rinse with lukewarm water.',
-    image: '/images/products-line.jpg',
+    image: '/images/product-amino-cleanser.jpg',
   },
   {
     id: 'lash-eye-conditioner',
@@ -384,7 +384,7 @@ export const PRODUCTS: Product[] = [
     description: 'Prostaglandin-free conditioning serum enriched with biotinoyl tripeptide and red clover extract to strengthen delicate lash follicles and encourage lush density.',
     keyIngredients: ['Biotinoyl Tripeptide-1', 'Myristoyl Pentapeptide-17', 'Panthenol Provitamin B5', 'Red Clover Extract'],
     howToUse: 'Swipe along the upper lash root line and brows nightly after cleansing. Visible density within 4 weeks.',
-    image: '/images/products-line.jpg',
+    image: '/images/product-lash-elixir.jpg',
   }
 ];
 
@@ -402,7 +402,7 @@ export const UPSELL_PRODUCTS: Product[] = [
     description: 'Instant micro-fine refreshing mist with organic damascena rosewater, niacinamide, and deep marine minerals.',
     keyIngredients: ['Damask Rosewater', 'Marine Electrolytes', 'Niacinamide (2%)'],
     howToUse: 'Mist liberally throughout the day to rehydrate skin or set makeup.',
-    image: '/images/products-line.jpg',
+    image: '/images/product-hydration-mist.jpg',
     isUpsell: true,
   },
   {
