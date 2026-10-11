@@ -85,7 +85,7 @@ export const FacilityVideoSection: React.FC<FacilityVideoSectionProps> = ({ onOp
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-6 space-y-8"
+            className="lg:col-span-7 space-y-8"
           >
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d7a761]/40 text-[#d7a761] text-[10px] uppercase tracking-[0.22em] font-medium bg-[#3b3a63]/70 backdrop-blur-sm shadow-xs">
@@ -103,7 +103,7 @@ export const FacilityVideoSection: React.FC<FacilityVideoSectionProps> = ({ onOp
             </div>
 
             {/* Soft, rounded feature highlights (No rigid boxed numbers) */}
-            <div className="space-y-4 pt-2">
+            <div className="space-y-4 pt-2 max-w-xl">
               {HIGHLIGHTS.map((item, idx) => {
                 const Icon = item.icon;
                 return (
@@ -144,21 +144,21 @@ export const FacilityVideoSection: React.FC<FacilityVideoSectionProps> = ({ onOp
             )}
           </motion.div>
 
-          {/* Compact, Intimate Video Player Frame (High visual fidelity, non-stretched) */}
+          {/* Vertical 9:16 Portrait Video Player Frame (Native Resolution, Zero Pixel Distortion) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.8 }}
-            className="lg:col-span-6 flex flex-col items-center"
+            className="lg:col-span-5 flex flex-col items-center justify-center"
           >
-            <div className="relative w-full max-w-lg mx-auto">
+            <div className="relative w-full max-w-[280px] sm:max-w-[310px] mx-auto">
               {/* Soft decorative glow */}
-              <div className="absolute -inset-1.5 bg-gradient-to-r from-[#739cd2]/30 via-[#d7a761]/30 to-[#484774]/50 rounded-[2.2rem] blur-xl opacity-60" />
+              <div className="absolute -inset-2 bg-gradient-to-b from-[#739cd2]/30 via-[#d7a761]/25 to-[#484774]/50 rounded-[3rem] blur-2xl opacity-60" />
 
-              {/* Main Compact Video Container */}
-              <div className="relative rounded-[2rem] overflow-hidden bg-black/90 border-2 border-white/20 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.8)] group">
-                <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden flex items-center justify-center">
+              {/* Main Vertical Device/Frame */}
+              <div className="relative rounded-[2.5rem] p-2 bg-[#2f2e52]/90 border-2 border-white/20 shadow-[0_30px_70px_-20px_rgba(0,0,0,0.85)]">
+                <div className="relative aspect-[9/16] w-full overflow-hidden rounded-[2rem] bg-black group flex items-center justify-center">
                   <video
                     ref={videoRef}
                     src="/videos/sanctuary_facilities.mp4"
@@ -177,20 +177,25 @@ export const FacilityVideoSection: React.FC<FacilityVideoSectionProps> = ({ onOp
                       animate={{ scale: 1, opacity: 1 }}
                       onClick={togglePlay}
                       aria-label="Play video"
-                      className="absolute w-16 h-16 rounded-full bg-[#484774]/90 backdrop-blur-md border border-[#d7a761]/60 flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform"
+                      className="absolute w-14 h-14 rounded-full bg-[#484774]/90 backdrop-blur-md border border-[#d7a761]/60 flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform z-20"
                     >
-                      <Play className="w-6 h-6 fill-current text-[#d7a761] ml-0.5" />
+                      <Play className="w-5 h-5 fill-current text-[#d7a761] ml-0.5" />
                     </motion.button>
                   )}
 
                   {/* Top Badge Overlay */}
-                  <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[10px] uppercase tracking-wider text-stone-200">
-                    <MapPin className="w-3 h-3 text-[#d7a761]" />
-                    <span>Suite A · Westport, CT</span>
+                  <div className="absolute top-3 inset-x-3 flex items-center justify-between z-10 pointer-events-none">
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[9px] uppercase tracking-wider text-stone-200">
+                      <MapPin className="w-2.5 h-2.5 text-[#d7a761]" />
+                      <span>Suite A · Westport</span>
+                    </div>
+                    <span className="text-[9px] tracking-widest uppercase text-[#d7a761] font-medium px-2 py-0.5 rounded-full bg-black/50 backdrop-blur-xs border border-white/10">
+                      Tour
+                    </span>
                   </div>
 
                   {/* Bottom Rounded Control Strip */}
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4 sm:p-5 flex flex-col gap-2.5">
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent p-3 sm:p-4 flex flex-col gap-2 z-10">
                     {/* Progress Bar */}
                     <div className="w-full bg-white/20 h-1 rounded-full overflow-hidden cursor-pointer">
                       <div
@@ -201,44 +206,44 @@ export const FacilityVideoSection: React.FC<FacilityVideoSectionProps> = ({ onOp
 
                     {/* Controls */}
                     <div className="flex items-center justify-between text-white text-xs">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1.5">
                         <button
                           onClick={togglePlay}
                           aria-label={isPlaying ? 'Pause video' : 'Play video'}
-                          className="p-2 rounded-full hover:bg-white/20 transition-colors bg-white/10"
+                          className="p-1.5 rounded-full hover:bg-white/20 transition-colors bg-white/10"
                         >
-                          {isPlaying ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5 fill-current" />}
+                          {isPlaying ? <Pause className="w-3 h-3" /> : <Play className="w-3 h-3 fill-current" />}
                         </button>
 
                         <button
                           onClick={toggleMute}
                           aria-label={isMuted ? 'Unmute video' : 'Mute video'}
-                          className="px-3 py-1.5 rounded-full hover:bg-white/20 transition-colors bg-white/10 flex items-center gap-1.5 text-[10px] uppercase tracking-wider text-stone-200"
+                          className="px-2.5 py-1 rounded-full hover:bg-white/20 transition-colors bg-white/10 flex items-center gap-1 text-[9px] uppercase tracking-wider text-stone-200"
                         >
-                          {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
-                          <span>{isMuted ? 'Muted' : 'Audio On'}</span>
+                          {isMuted ? <VolumeX className="w-3 h-3" /> : <Volume2 className="w-3 h-3" />}
+                          <span>{isMuted ? 'Muted' : 'Sound'}</span>
                         </button>
 
                         <button
                           onClick={handleRestart}
                           aria-label="Restart tour"
-                          className="p-2 rounded-full hover:bg-white/20 transition-colors bg-white/10"
+                          className="p-1.5 rounded-full hover:bg-white/20 transition-colors bg-white/10"
                         >
-                          <RotateCcw className="w-3.5 h-3.5" />
+                          <RotateCcw className="w-3 h-3" />
                         </button>
                       </div>
 
-                      <span className="text-[10px] tracking-widest uppercase text-[#d7a761] font-medium hidden sm:inline">
-                        Westport Sanctuary
+                      <span className="text-[9px] tracking-widest uppercase text-stone-300 font-medium">
+                        Live Suite
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Caption under video */}
-              <p className="mt-3 text-center text-xs text-stone-400 font-light tracking-wide">
-                Recorded live inside Suite A · Designed for single-client privacy
+              {/* Caption under vertical frame */}
+              <p className="mt-3 text-center text-xs text-stone-300/80 font-light tracking-wide">
+                Live Suite Tour · Single-client clinical suite
               </p>
             </div>
           </motion.div>
