@@ -515,6 +515,49 @@ export const CAVI_LIPO_FAQ = [
   },
 ];
 
+export const PRIVACY_TERMS_SECTIONS = [
+  {
+    number: '1',
+    title: 'Data Collection',
+    text: 'We may collect your name, email address, mailing address, and mobile phone number when you sign up for SMS updates. This information may be collected through our website contact form, email, rental agreement, or third-party reservation systems.',
+  },
+  {
+    number: '2',
+    title: 'Data Usage',
+    text: 'Your information will only be used for sending updates, promotions, appointment reminders, and communications related to our services.',
+  },
+  {
+    number: '3',
+    title: 'Data Security',
+    text: 'We use secure storage and protection measures to safeguard your personal information against unauthorized access.',
+  },
+  {
+    number: '4',
+    title: 'Data Retention',
+    text: 'Your information will be retained as long as you are subscribed to our SMS service. You may request deletion at any time.',
+  },
+  {
+    number: '5',
+    title: 'Messaging Rates & Frequency',
+    text: 'Message and data rates may apply. Your mobile carrier may charge fees for sending or receiving text messages, especially if you do not have an unlimited plan.\n\nMessages are recurring, and frequency may vary.',
+  },
+  {
+    number: '6',
+    title: 'Contact for Help',
+    text: 'For assistance, contact us at: phone number: (203) 486-8989 email: info@essencciarejuvenationwellness.com\n\nYou may also reply with the word HELP to receive our contact details via text.',
+  },
+  {
+    number: '7',
+    title: 'Opt-Out Instructions',
+    text: 'You may opt out of SMS messages at any time by:\n• Replying STOP or CANCEL to any message,\n• Emailing us at info@essencciarejuvenationwellness.com or calling us at (203) 486-8989\n\nAfter unsubscribing, you will receive one final confirmation SMS. Your phone number will be removed from our list within 24 hours.',
+  },
+  {
+    number: '8',
+    title: 'Non-Sharing Clause',
+    text: 'We do not sell, rent, or share your information with third parties for marketing purposes. ESSENCCIA REJUVENATION & WELLNESS will never share collected mobile numbers with outside parties.',
+  },
+];
+
 export const SPA_POLICIES = [
   {
     title: 'Cancellations',
@@ -532,8 +575,5 @@ export const SPA_POLICIES = [
     title: 'Pets',
     text: 'No pets are allowed per the health department.',
   },
-  {
-    title: 'Text Messages & Privacy',
-    text: 'By texting START or YES to 203-486-8989 you consent to receive text messages from Essenccia Rejuvenation & Wellness. Consent is not a condition of purchase. Message frequency varies; message and data rates may apply. Reply STOP to unsubscribe or HELP for assistance. Your mobile opt-in information is never shared with anyone, and your information is only used for updates, promotions, appointment reminders, and communications related to our services.',
-  },
 ];
+

@@ -92,7 +92,7 @@ export default function HomePage() {
       </main>
 
       {/* Editorial Footer */}
-      <Footer />
+      <Footer onOpenPolicy={() => setPolicyOpen(true)} />
 
       {/* Dynamic Slide-Out Bag / Cart Drawer with 1-Click Upselling */}
       <CartDrawer />

@@ -6,7 +6,11 @@ import Image from 'next/image';
 import { Check, Award } from 'lucide-react';
 import { CLINIC_INFO } from '@/data/clinic-data';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenPolicy?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -175,9 +179,33 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-6">
             <span>Westport, Connecticut</span>
             <span>•</span>
-            <span>Privacy Policy</span>
+            {onOpenPolicy ? (
+              <button
+                type="button"
+                onClick={onOpenPolicy}
+                className="hover:text-[#d7a761] transition-colors focus-visible:underline cursor-pointer"
+              >
+                Privacy Policy
+              </button>
+            ) : (
+              <Link href="/privacy" className="hover:text-[#d7a761] transition-colors">
+                Privacy Policy
+              </Link>
+            )}
             <span>•</span>
-            <span>Terms of Care</span>
+            {onOpenPolicy ? (
+              <button
+                type="button"
+                onClick={onOpenPolicy}
+                className="hover:text-[#d7a761] transition-colors focus-visible:underline cursor-pointer"
+              >
+                Terms of Care
+              </button>
+            ) : (
+              <Link href="/privacy" className="hover:text-[#d7a761] transition-colors">
+                Terms of Care
+              </Link>
+            )}
           </div>
         </div>
       </div>
