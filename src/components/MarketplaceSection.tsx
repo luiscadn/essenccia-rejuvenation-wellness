@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ShoppingBag, Star, Sparkles, Truck, ShieldCheck, Leaf } from 'lucide-react';
+import { ShoppingBag, Star, Sparkles } from 'lucide-react';
 import { PRODUCTS } from '@/data/clinic-data';
 import { useCart } from '@/context/cart-context';
 
@@ -126,45 +126,6 @@ export const MarketplaceSection: React.FC = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Stem Beauty Style Trust & Value Strip */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-white rounded-2xl border border-[#a2a1ba]/25 p-8 grid grid-cols-1 md:grid-cols-3 gap-6 shadow-sm"
-        >
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#f0efec] flex items-center justify-center shrink-0 text-[#484774]">
-              <Truck className="w-5 h-5 text-[#d7a761]" />
-            </div>
-            <div>
-              <h4 className="font-medium text-stone-900 text-sm">Complimentary Delivery</h4>
-              <p className="text-stone-500 text-xs font-light">On all boutique orders over $150 in the US</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#f0efec] flex items-center justify-center shrink-0 text-[#484774]">
-              <ShieldCheck className="w-5 h-5 text-[#d7a761]" />
-            </div>
-            <div>
-              <h4 className="font-medium text-stone-900 text-sm">100% Medical Grade</h4>
-              <p className="text-stone-500 text-xs font-light">Tested &amp; certified by aesthetic clinicians</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-[#f0efec] flex items-center justify-center shrink-0 text-[#484774]">
-              <Leaf className="w-5 h-5 text-[#d7a761]" />
-            </div>
-            <div>
-              <h4 className="font-medium text-stone-900 text-sm">Clean &amp; Cruelty-Free</h4>
-              <p className="text-stone-500 text-xs font-light">Zero parabens, sulfates, or artificial perfumes</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
