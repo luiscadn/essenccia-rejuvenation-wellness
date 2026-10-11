@@ -26,6 +26,32 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-5 relative"
           >
+            {/* Luxury Gold Plaque Badge: Above photo on mobile, elegantly floating on tablet/desktop */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: -10 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              className="mb-4 sm:mb-0 sm:absolute sm:-top-6 sm:-left-6 bg-[#484774] text-white p-4 sm:p-6 rounded-2xl shadow-[0_20px_40px_-15px_rgba(72,71,116,0.5)] border-2 border-[#d7a761]/40 sm:max-w-[260px] z-20 w-full sm:w-auto"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-[#d7a761]/20 flex items-center justify-center shrink-0 border border-[#d7a761]/50">
+                  <Award className="w-5 h-5 text-[#d7a761]" />
+                </div>
+                <div>
+                  <span className="block text-[9px] uppercase tracking-[0.25em] text-[#d7a761] font-semibold">
+                    Winner
+                  </span>
+                  <span className="font-serif text-xl leading-none text-white font-normal">
+                    Best of 2026
+                  </span>
+                </div>
+              </div>
+              <p className="mt-3 text-[10px] tracking-wider uppercase text-stone-300 font-medium border-t border-white/10 pt-2.5">
+                Day Spa Category · Westport, CT
+              </p>
+            </motion.div>
+
             <div className="relative aspect-[4/5] sm:aspect-[3/4] lg:aspect-[4/5] overflow-hidden rounded-3xl shadow-[0_25px_50px_-12px_rgba(72,71,116,0.25)] border border-[#484774]/10 bg-stone-200">
               <Image
                 src="/fotos_webp/ledy_award.webp"
@@ -51,32 +77,6 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
                 </p>
               </div>
             </div>
-
-            {/* Floating Luxury Gold Plaque Badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3, duration: 0.7 }}
-              className="absolute -bottom-8 -right-4 sm:-right-8 bg-[#484774] text-white p-5 sm:p-6 rounded-2xl shadow-[0_20px_40px_-15px_rgba(72,71,116,0.5)] border-2 border-[#d7a761]/40 max-w-[260px]"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#d7a761]/20 flex items-center justify-center shrink-0 border border-[#d7a761]/50">
-                  <Award className="w-5 h-5 text-[#d7a761]" />
-                </div>
-                <div>
-                  <span className="block text-[9px] uppercase tracking-[0.25em] text-[#d7a761] font-semibold">
-                    Winner
-                  </span>
-                  <span className="font-serif text-xl leading-none text-white font-normal">
-                    Best of 2026
-                  </span>
-                </div>
-              </div>
-              <p className="mt-3 text-[10px] tracking-wider uppercase text-stone-300 font-medium border-t border-white/10 pt-2.5">
-                Day Spa Category · Westport, CT
-              </p>
-            </motion.div>
           </motion.div>
 
           {/* Editorial Content Column */}
