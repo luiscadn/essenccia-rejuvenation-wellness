@@ -48,7 +48,7 @@ export const TREATMENTS: Treatment[] = [
       'Zero downtime, painless, and completely non-invasive'
     ],
     tech: 'Rezenerate Nanotechnology & High-Frequency Ultrasound',
-    image: '/fotos_webp/rezenerate.webp',
+    image: '/fotos_webp/19e9e2_e52c1f551c734711bf45011da1a835ea~mv2.webp',
   },
   {
     id: 'viora-rf-tightening',
@@ -67,7 +67,7 @@ export const TREATMENTS: Treatment[] = [
       'Long-lasting structural lifting without surgery'
     ],
     tech: 'Viora V-ST Multi-Core Radiofrequency',
-    image: '/fotos_webp/rf_tightening.webp',
+    image: '/fotos_webp/19e9e2_b889683592fb4cbf820461c3e76b9dea~mv2.webp',
   },
   {
     id: 'cavi-lipo-body-sculpting',
@@ -86,7 +86,7 @@ export const TREATMENTS: Treatment[] = [
       'Completely non-invasive with zero recovery period'
     ],
     tech: 'Low-Frequency Dual-Probe Ultrasound Cavitation',
-    image: '/fotos_webp/cavi_lipo.webp',
+    image: '/fotos_webp/19e9e2_cf3668aa0c9d4b82aca9ce4655e724fe~mv2.webp',
   },
   {
     id: 'prx-treatments',
