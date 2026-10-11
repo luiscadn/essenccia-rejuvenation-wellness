@@ -87,7 +87,7 @@ export const CartDrawer: React.FC = () => {
         <div className="p-5 border-b border-[#a2a1ba]/25 flex items-center justify-between bg-white">
           <div className="flex items-center gap-2">
             <ShoppingBag className="w-5 h-5 text-[#484774]" />
-            <h2 className="font-serif text-xl font-light text-[#484774]">
+            <h2 className="font-sans text-lg font-semibold text-[#484774]">
               Your Shopping Bag ({items.reduce((s, i) => s + i.quantity, 0)})
             </h2>
           </div>
@@ -134,7 +134,7 @@ export const CartDrawer: React.FC = () => {
                 <ShoppingBag className="w-8 h-8 stroke-1" />
               </div>
               <div className="space-y-1">
-                <p className="font-serif text-xl font-light text-[#484774]">Your bag is empty</p>
+                <p className="font-sans text-lg font-semibold text-[#484774]">Your bag is empty</p>
                 <p className="text-xs text-stone-500">Discover our clinical restorative formulations below.</p>
               </div>
               <button
@@ -164,7 +164,7 @@ export const CartDrawer: React.FC = () => {
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
                       <div className="flex justify-between items-start gap-2">
-                        <h3 className="font-serif text-sm font-medium text-[#484774] leading-tight">
+                        <h3 className="font-sans text-sm font-semibold text-[#484774] leading-tight">
                           {item.product.name}
                         </h3>
                         <button

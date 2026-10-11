@@ -26,7 +26,7 @@ export const MarketplaceSection: React.FC = () => {
             The Skincare Apothecary
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#484774]">
-            Clinical formulations crafted to extend in-clinic results.
+            Clinical formulations crafted to <span className="italic text-[#739cd2]">extend</span> in-clinic results.
           </h2>
           <p className="text-stone-600 text-sm sm:text-base font-light leading-relaxed">
             Pure botanical stem cells, bio-identical ceramides, and copper peptides formulated to nurture and protect your skin’s delicate lipid barrier between clinic visits.
@@ -77,7 +77,7 @@ export const MarketplaceSection: React.FC = () => {
                     </span>
                   </div>
 
-                  <h3 className="font-serif text-xl sm:text-2xl font-light text-[#484774] group-hover:text-[#739cd2] transition-colors leading-snug">
+                  <h3 className="font-sans text-lg sm:text-xl font-semibold text-[#484774] group-hover:text-[#739cd2] transition-colors leading-snug">
                     {product.name}
                   </h3>
                   <p className="text-stone-500 text-xs uppercase tracking-wider font-medium">

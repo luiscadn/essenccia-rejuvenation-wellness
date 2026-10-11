@@ -37,7 +37,7 @@ export const PromisesSection: React.FC = () => {
                   </div>
 
                   {/* Large, High-Legibility Title */}
-                  <h3 className="font-serif text-3xl sm:text-[2rem] font-normal leading-[1.15] text-[#484774] group-hover:text-[#739cd2] transition-colors">
+                  <h3 className="font-sans text-2xl sm:text-[1.75rem] font-semibold tracking-tight leading-snug text-[#484774] group-hover:text-[#739cd2] transition-colors">
                     {p.title}
                   </h3>
 

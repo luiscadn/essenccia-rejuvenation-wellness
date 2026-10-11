@@ -37,7 +37,7 @@ export const DirectorProfile: React.FC = () => {
 
           <div className="absolute -bottom-6 -right-2 sm:-right-6 bg-white/95 backdrop-blur-md rounded-2xl border border-[#484774]/10 px-6 py-5 shadow-[0_20px_40px_-24px_rgba(72,71,116,0.4)]">
             <p className="eyebrow">Founder &amp; Director</p>
-            <p className="font-serif text-3xl font-light text-[#484774] mt-1">Ledy</p>
+            <p className="font-sans text-2xl sm:text-3xl font-semibold tracking-tight text-[#484774] mt-0.5">Ledy</p>
             <p className="text-[10px] uppercase tracking-wider text-[#d7a761] font-semibold mt-0.5">Best of 2026 Awardee</p>
           </div>
         </motion.div>
@@ -87,7 +87,7 @@ export const DirectorProfile: React.FC = () => {
             {CREDENTIALS.map((c) => (
               <div key={c.label}>
                 <dt className="sr-only">{c.label}</dt>
-                <dd className="font-serif text-3xl sm:text-4xl font-light text-[#484774] tabular-nums">{c.value}</dd>
+                <dd className="font-sans text-3xl sm:text-4xl font-semibold text-[#484774] tabular-nums">{c.value}</dd>
                 <p className="mt-2 text-[10px] uppercase tracking-[0.18em] leading-relaxed text-[#5c6c84]">{c.label}</p>
               </div>
             ))}

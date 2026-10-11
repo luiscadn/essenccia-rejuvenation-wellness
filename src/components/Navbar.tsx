@@ -87,7 +87,7 @@ const TOP_LABEL_CLASS =
 
 const MenuItemLabel: React.FC<{ item: MenuItem }> = ({ item }) => (
   <>
-    <span className="block font-serif text-lg leading-tight text-[#484774] group-hover:text-[#739cd2] transition-colors">
+    <span className="block font-sans text-sm font-semibold leading-tight text-[#484774] group-hover:text-[#739cd2] transition-colors">
       {item.label}
     </span>
     <span className="block mt-0.5 text-[10px] uppercase tracking-[0.16em] font-medium text-[#5c6c84]">

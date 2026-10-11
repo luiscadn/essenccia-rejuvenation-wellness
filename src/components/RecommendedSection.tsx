@@ -52,7 +52,7 @@ export const RecommendedSection: React.FC<RecommendedSectionProps> = ({ onBookTr
                   <span className="flex items-center gap-2"><Clock className="w-3 h-3" aria-hidden="true" />{t.duration}</span>
                   <span className="text-[#484774] font-semibold">{t.price}</span>
                 </div>
-                <h3 className="font-serif text-2xl leading-snug font-normal text-[#484774] group-hover:text-[#739cd2] transition-colors">{t.name}</h3>
+                <h3 className="font-sans text-xl sm:text-2xl font-semibold leading-snug tracking-tight text-[#484774] group-hover:text-[#739cd2] transition-colors">{t.name}</h3>
                 <p className="text-sm leading-loose tracking-[0.03em] text-[#5c6c84] line-clamp-3">{t.shortDesc}</p>
                 <button
                   onClick={() => onBookTreatment(t)}

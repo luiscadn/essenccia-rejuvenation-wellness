@@ -59,7 +59,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ isOpen, onClose }) => 
             <div className="overflow-y-auto p-6 sm:p-8 space-y-5">
               {SPA_POLICIES.map((policy) => (
                 <section key={policy.title} className="rounded-2xl bg-white/70 border border-[#484774]/10 p-5">
-                  <h3 className="font-serif text-xl text-[#484774]">{policy.title}</h3>
+                  <h3 className="font-sans text-base sm:text-lg font-semibold text-[#484774]">{policy.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed font-light text-stone-700">{policy.text}</p>
                 </section>
               ))}

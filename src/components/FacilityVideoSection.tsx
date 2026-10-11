@@ -119,7 +119,7 @@ export const FacilityVideoSection: React.FC<FacilityVideoSectionProps> = ({ onOp
                       <Icon className="w-4 h-4" />
                     </div>
                     <div className="space-y-1">
-                      <h3 className="font-serif text-xl font-light text-white group-hover:text-[#d7a761] transition-colors">
+                      <h3 className="font-sans text-lg font-semibold text-white group-hover:text-[#d7a761] transition-colors">
                         {item.title}
                       </h3>
                       <p className="text-xs sm:text-sm text-stone-300 leading-relaxed font-light">

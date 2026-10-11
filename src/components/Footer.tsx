@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#d7a761] font-semibold">
               The Essenccia Journal
             </span>
-            <h3 className="font-serif text-2xl font-light text-white">
+            <h3 className="font-sans text-xl sm:text-2xl font-semibold leading-snug text-white">
               Receive private invitations and seasonal skin protocols.
             </h3>
             <p className="text-stone-400 text-xs font-light">

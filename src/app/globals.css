@@ -40,8 +40,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, .font-serif {
+/* Primary headings (h1, h2): Refined high-contrast organic editorial serif */
+h1, h2 {
   font-family: var(--font-serif), serif;
+  letter-spacing: -0.015em;
+}
+
+/* Secondary headings, body, buttons, navigation and interface: Modern clean sans-serif */
+h3, h4, h5, h6, p, button, a, input, select, textarea, label {
+  font-family: var(--font-sans), sans-serif;
 }
 
 /* Custom Scrollbar */

@@ -20,7 +20,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                 Visit Our Sanctuary
               </span>
               <h2 className="font-serif text-3xl sm:text-5xl font-light text-[#484774]">
-                A discreet haven located in the heart of Westport.
+                A discreet haven located in the <span className="italic text-[#739cd2]">heart</span> of Westport.
               </h2>
               <p className="text-stone-600 text-sm sm:text-base font-light leading-relaxed">
                 Experience quiet luxury, ample private parking, and a tranquil escape designed for uninterrupted healing and rejuvenation.
@@ -115,7 +115,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                 <span className="text-[10px] uppercase tracking-[0.2em] text-[#484774] font-semibold">
                   Private Practice In Westport
                 </span>
-                <h3 className="font-serif text-2xl font-light text-[#484774]">
+                <h3 className="font-sans text-xl sm:text-2xl font-semibold text-[#484774]">
                   Essenccia Rejuvenation & Wellness
                 </h3>
                 <p className="text-stone-600 text-xs sm:text-sm font-light leading-relaxed">

@@ -39,7 +39,7 @@ export const BeforeAfterSection: React.FC = () => {
                   <span className="eyebrow !text-[#d7a761]">Case</span>
                   <span className="text-[11px] tabular-nums text-[#a2a1ba] tracking-[0.15em]">0{i + 1}</span>
                 </div>
-                <h3 className="font-serif text-2xl font-normal text-[#484774] leading-snug">{c.treatment}</h3>
+                <h3 className="font-sans text-xl sm:text-2xl font-semibold text-[#484774] leading-snug">{c.treatment}</h3>
                 <dl className="space-y-1.5 text-xs leading-relaxed tracking-[0.03em]">
                   <div className="flex gap-2"><dt className="uppercase tracking-[0.15em] text-[#5c6c84] w-14 shrink-0">Goal</dt><dd className="text-[#484774]">{c.goal}</dd></div>
                   <div className="flex gap-2"><dt className="uppercase tracking-[0.15em] text-[#5c6c84] w-14 shrink-0">Result</dt><dd className="text-[#484774]">{c.result}</dd></div>

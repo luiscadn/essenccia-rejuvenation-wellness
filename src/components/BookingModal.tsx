@@ -90,7 +90,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 <CheckCircle className="w-8 h-8" />
               </div>
               <div className="space-y-2">
-                <h3 className="font-serif text-3xl font-light text-[#484774]">
+                <h3 className="font-sans text-2xl sm:text-3xl font-semibold text-[#484774]">
                   Consultation Reserved
                 </h3>
                 <p className="text-stone-600 text-sm max-w-md mx-auto">

@@ -91,7 +91,7 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({
                     <span className="flex items-center gap-2 text-[#5c6c84]"><Clock className="w-3.5 h-3.5" aria-hidden="true" />{t.duration}</span>
                     <span className="font-semibold text-[#484774]">{t.price}</span>
                   </div>
-                  <h3 className="font-serif text-2xl font-normal leading-snug text-[#484774] group-hover:text-[#739cd2] transition-colors">{t.name}</h3>
+                  <h3 className="font-sans text-xl font-semibold leading-snug tracking-tight text-[#484774] group-hover:text-[#739cd2] transition-colors">{t.name}</h3>
                   <ul className="space-y-2.5">
                     {t.benefits.slice(0, 3).map((b) => (
                       <li key={b} className="flex items-start gap-3 text-xs leading-relaxed tracking-[0.03em] text-[#5c6c84]">

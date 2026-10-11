@@ -87,7 +87,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
 
             <div className="absolute top-6 right-6 bg-[#484774]/95 backdrop-blur-md text-[#f7f7f4] px-5 py-4 rounded-2xl border border-[#d7a761]/40 shadow-lg">
-              <p className="font-serif text-3xl font-light leading-none tabular-nums">23<span className="text-[#d7a761]">+</span></p>
+              <p className="font-sans text-3xl font-semibold leading-none tabular-nums">23<span className="text-[#d7a761]">+</span></p>
               <p className="mt-1.5 text-[9px] uppercase tracking-[0.2em] text-[#a2a1ba]">Years of mastery</p>
             </div>
           </motion.div>

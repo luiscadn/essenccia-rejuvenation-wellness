@@ -70,7 +70,7 @@ export const CaviLipoFaqModal: React.FC<CaviLipoFaqModalProps> = ({ isOpen, onCl
                       aria-expanded={expanded}
                       className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
                     >
-                      <span className="font-serif text-lg text-[#484774]">{item.question}</span>
+                      <span className="font-sans text-base font-semibold text-[#484774]">{item.question}</span>
                       <Plus
                         className={`w-4 h-4 shrink-0 text-[#d7a761] transition-transform ${expanded ? 'rotate-45' : ''}`}
                       />

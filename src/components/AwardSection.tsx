@@ -42,7 +42,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
                   <span className="block text-[9px] uppercase tracking-[0.25em] text-[#d7a761] font-semibold">
                     Winner
                   </span>
-                  <span className="font-serif text-xl leading-none text-white font-normal">
+                  <span className="font-sans text-lg font-semibold leading-none text-white">
                     Best of 2026
                   </span>
                 </div>
@@ -72,7 +72,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
                   </div>
                   <span className="text-xs uppercase tracking-[0.2em] font-medium text-stone-200">5.0 Google Reviews</span>
                 </div>
-                <p className="mt-1 font-serif text-lg tracking-wide text-white">
+                <p className="mt-1 font-sans text-sm font-medium tracking-wide text-white/95">
                   Ledy receiving the 2026 Benchmark Honor
                 </p>
               </div>
@@ -92,7 +92,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               Voted <span className="italic text-[#739cd2]">Best of 2026</span> in Westport, Connecticut
             </h2>
 
-            <p className="font-serif text-xl sm:text-2xl text-[#484774]/90 font-light leading-relaxed italic">
+            <p className="font-sans text-lg sm:text-xl text-[#484774]/90 font-normal leading-relaxed italic">
               &ldquo;An authentic validation from our clients, honoring two decades of regenerative beauty and bespoke care.&rdquo;
             </p>
 
@@ -115,7 +115,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               <div className="p-5 rounded-2xl bg-white/80 border border-[#484774]/10 shadow-xs">
                 <div className="flex items-center gap-1.5 text-[#d7a761]">
                   <Star className="w-4 h-4 fill-current" />
-                  <span className="font-serif text-2xl font-light text-[#484774] tabular-nums">5.0</span>
+                  <span className="font-sans text-2xl font-bold text-[#484774] tabular-nums">5.0</span>
                 </div>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-[#5c6c84]">Google Rating</p>
                 <p className="text-[11px] text-[#484774] mt-0.5 font-medium">100% Verified Reviews</p>
@@ -124,7 +124,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               <div className="p-5 rounded-2xl bg-white/80 border border-[#484774]/10 shadow-xs">
                 <div className="flex items-center gap-1.5 text-[#484774]">
                   <ShieldCheck className="w-4 h-4 text-[#d7a761]" />
-                  <span className="font-serif text-2xl font-light text-[#484774]">Benchmark</span>
+                  <span className="font-sans text-2xl font-bold text-[#484774]">Benchmark</span>
                 </div>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-[#5c6c84]">Audited Quality</p>
                 <p className="text-[11px] text-[#484774] mt-0.5 font-medium">BusinessRate Program</p>
@@ -133,7 +133,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               <div className="p-5 rounded-2xl bg-white/80 border border-[#484774]/10 shadow-xs">
                 <div className="flex items-center gap-1.5 text-[#484774]">
                   <CheckCircle2 className="w-4 h-4 text-[#d7a761]" />
-                  <span className="font-serif text-2xl font-light text-[#484774] tabular-nums">23+</span>
+                  <span className="font-sans text-2xl font-bold text-[#484774] tabular-nums">23+</span>
                 </div>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-[#5c6c84]">Years Heritage</p>
                 <p className="text-[11px] text-[#484774] mt-0.5 font-medium">Master Clinical Practice</p>
