@@ -1,69 +1,105 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import React, { useState } from 'react';
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { PhilosophySection } from '@/components/PhilosophySection';
+import { TreatmentsSection } from '@/components/TreatmentsSection';
+import { MarketplaceSection } from '@/components/MarketplaceSection';
+import { NewsTicker } from '@/components/NewsTicker';
+import { DirectorProfile } from '@/components/DirectorProfile';
+import { AwardSection } from '@/components/AwardSection';
+import { FacilityVideoSection } from '@/components/FacilityVideoSection';
+import { PromisesSection } from '@/components/PromisesSection';
+import { ReasonsSection } from '@/components/ReasonsSection';
+import { RecommendedSection } from '@/components/RecommendedSection';
+import { BeforeAfterSection } from '@/components/BeforeAfterSection';
+import { LocationSection } from '@/components/LocationSection';
+import { Footer } from '@/components/Footer';
+import { CartDrawer } from '@/components/CartDrawer';
+import { BookingModal } from '@/components/BookingModal';
+import { TreatmentDetailModal } from '@/components/TreatmentDetailModal';
+import { ToastNotification } from '@/components/ToastNotification';
+import { Treatment } from '@/data/clinic-data';
+
+export default function HomePage() {
+  const [bookingOpen, setBookingOpen] = useState(false);
+  const [selectedTreatmentForBooking, setSelectedTreatmentForBooking] = useState<Treatment | null>(null);
+  const [detailTreatment, setDetailTreatment] = useState<Treatment | null>(null);
+
+  const handleOpenBooking = (treatment?: Treatment) => {
+    setSelectedTreatmentForBooking(treatment || null);
+    setBookingOpen(true);
+  };
+
+  const handleCloseBooking = () => {
+    setBookingOpen(false);
+    setSelectedTreatmentForBooking(null);
+  };
+
+  const handleViewDetail = (treatment: Treatment) => {
+    setDetailTreatment(treatment);
+  };
+
+  const handleCloseDetail = () => {
+    setDetailTreatment(null);
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="min-h-screen flex flex-col bg-[#f7f7f4] text-[#484774]">
+      {/* Skip to Main Content for Accessibility compliance */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-stone-900 text-white rounded-md text-xs font-medium"
+      >
+        Skip to main content
+      </a>
+
+      {/* Primary Sticky Header */}
+      <Navbar onOpenBooking={() => handleOpenBooking()} />
+
+      {/* Main Content Landmark */}
+      <main id="main-content" className="flex-1">
+        <Hero onOpenBooking={() => handleOpenBooking()} />
+        <NewsTicker />
+        <PhilosophySection />
+        <AwardSection onOpenBooking={() => handleOpenBooking()} />
+        <DirectorProfile />
+        <FacilityVideoSection onOpenBooking={() => handleOpenBooking()} />
+        <PromisesSection />
+        <ReasonsSection />
+        <RecommendedSection onBookTreatment={(treatment) => handleOpenBooking(treatment)} />
+        <TreatmentsSection
+          onSelectTreatment={handleViewDetail}
+          onBookTreatment={(treatment) => handleOpenBooking(treatment)}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        <BeforeAfterSection />
+        <MarketplaceSection />
+        <LocationSection onOpenBooking={() => handleOpenBooking()} />
       </main>
+
+      {/* Editorial Footer */}
+      <Footer />
+
+      {/* Dynamic Slide-Out Bag / Cart Drawer with 1-Click Upselling */}
+      <CartDrawer />
+
+      {/* Consultation Reservation Modal */}
+      <BookingModal
+        isOpen={bookingOpen}
+        onClose={handleCloseBooking}
+        initialTreatment={selectedTreatmentForBooking}
+      />
+
+      {/* Treatment Deep-Dive Science Modal */}
+      <TreatmentDetailModal
+        treatment={detailTreatment}
+        onClose={handleCloseDetail}
+        onBook={(treatment) => handleOpenBooking(treatment)}
+      />
+
+      {/* Tactile Micro-Notification */}
+      <ToastNotification />
     </div>
   );
 }
