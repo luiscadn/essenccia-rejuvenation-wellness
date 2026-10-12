@@ -3,15 +3,15 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  ArrowRight, 
-  Play, 
-  Star, 
-  ChevronLeft, 
-  ChevronRight, 
-  CheckCircle2, 
-  Quote, 
-  X, 
+import {
+  ArrowRight,
+  Play,
+  Star,
+  ChevronLeft,
+  ChevronRight,
+  CheckCircle2,
+  Quote,
+  X,
   ExternalLink,
   MessageSquare
 } from 'lucide-react';
@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
     <section id="top" className="relative bg-[#f7f7f4] overflow-hidden scroll-mt-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-32 pb-20 lg:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-          
+
           {/* Left Column: Editorial Headline & Actions */}
           <motion.div
             initial={{ opacity: 0, y: 25 }}
@@ -162,7 +162,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           >
             {/* Main Carousel Frame */}
             <div className="relative aspect-[4/5] sm:aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-3xl shadow-[0_25px_50px_-20px_rgba(72,71,116,0.35)] border border-[#484774]/15 bg-[#2a2948]">
-              
+
               {/* Animated Background Image Slide */}
               <AnimatePresence mode="wait">
                 <motion.div
@@ -317,7 +317,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <span>View all 14 featured client reviews</span>
               </button>
               <a
-                href="https://maps.google.com"
+                href="https://www.google.com/maps/place/ESSENCCIA+REJUVENATION+%26+WELLNESS/@41.1331923,-73.3707839,817m/data=!3m3!1e3!4b1!5s0x89e81b827c75016f:0xb445acf4958becb4!4m6!3m5!1s0x89e81bc1e30b87eb:0x46fffa2d1f802d11!8m2!3d41.1331883!4d-73.3682036!16s%2Fg%2F11vkpvhvhy?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-[11px] text-[#5c6c84] hover:text-[#4285F4] transition-colors"

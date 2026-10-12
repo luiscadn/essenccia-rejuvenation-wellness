@@ -609,7 +609,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Radio Frequency & Body Contouring',
     highlight: 'After one treatment of Radio Frequency, the bag under my eye was gone. My stomach changed its shape and stretch marks drastically improved!',
     text: "I visited Essenccia Rejuvenation & Wellness Center for the first time a few months ago. The truth is, I'm now hooked! Her treatments produce lasting results. She has been working on my face and body and the results are truly impressive. I've had this bump/bag under my eye for years - I've tried filler, that didn't work. After one treatment of Radio Frequency, it was gone (I can't believe it). In addition, I've had 3 children, and my stomach shows it. Ledy suggested that I try Body Contouring Treatments (fat melting & skin tightening). I am shocked at the results, my stomach has changed its shape and my stretch marks are drastically improved! I'm amazed that with every treatment, I see results - it's addicting! Results set aside, you leave here feeling pampered and rejuvenated. Truly a treasure. This is for sure a gem in Westport, CT. Thanks Ledy! You are the best!!",
-    associatedImage: '/images/hero-clinic.jpg',
+    associatedImage: '/images/procedure-rf-tightening.jpg',
   },
   {
     id: 'leah-smith',
@@ -622,7 +622,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Clinical Skincare Treatments',
     highlight: 'Ledy is amazing!!!!! She is passionate, skillful, talented, and truly just a beautiful person inside and out.',
     text: 'Ledy is amazing!!!!! She is passionate, skillful, talented, and truly just a beautiful person inside and out. My experiences with her are always very personable, which makes me feel so comfortable at all times. Ledy is the best!!!',
-    associatedImage: '/images/facial-treatment.jpg',
+    associatedImage: '/images/procedure-nanoneedling.jpg',
   },
   {
     id: 'wilma-figueroa',
@@ -635,7 +635,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Cavitation Body Sculpting & Facial',
     highlight: 'I had a few cavitation sessions with Ledy and she transformed my body, no need for any surgery because the results were stunning!',
     text: 'Ledy is truly amazing! She is a professional who is very knowledgeable in all areas of beauty. She is honest with what works for each client and is extremely skilled. She is constantly perfecting her technique and informs the client of what she is doing. I had a few cavitation sessions with Ledy and she transformed my body, no need for any surgery because the results were stunning. I also did a facial with her and it was a facial like never before. She incorporated my neck, chest, and back not only was it relaxing but it left my skin nourished and glowing. To top it off, she is so nice and pleasant! I love going to see her.',
-    associatedImage: '/fotos_webp/body_sculpt.webp',
+    associatedImage: '/images/procedure-cavitation-body.jpg',
   },
   {
     id: 'june-bosik',
@@ -649,7 +649,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Lymphatic Massages & Ultra Cavitation',
     highlight: 'From lymphatic massages, ultra cavitation and facials, all are phenomenal! You leave feeling so invigorated. She is the best of the best!',
     text: 'Words cannot express the passion Ledy has for her line of work! I have had many treatments performed by her and they are all fabulous. From lymphatic massages, ultra cavitation and facials, all are phenomenal! You leave her beautiful relaxing salon feeling so invigorated and honestly (in la-la land)!!! Ledy takes great pride in her treatments and will never let you down!!! She is the best of the best!!!',
-    associatedImage: '/fotos_webp/cavi_lipo.webp',
+    associatedImage: '/images/procedure-lymphatic-sculpt.jpg',
   },
   {
     id: 'maryclaire-reeves',
@@ -667,7 +667,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
       timeAgo: '1 year ago',
       text: "Thank you so much, Maryclaire! Your kind words mean the world to me. It's always a pleasure treating you, and I truly appreciate your trust. I look forward to seeing you again soon! 💖",
     },
-    associatedImage: '/images/ledy-treatment.jpg',
+    associatedImage: '/images/procedure-rf-tightening.jpg',
   },
   {
     id: 'aphrodite-karakasis',
@@ -680,7 +680,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Leg Sculpt, Facial Sculpt & Oxygen',
     highlight: 'I have had leg sculpt, facial sculpt and oxygen treatment. Everything I have done is working great and feels amazing. Clean and peaceful environment!',
     text: 'Ledy is a wonderful lady that cares about you while you are with her. I have had leg sculp, facial sculpt and oxygen treatment. Everything i have done is working great and feels amazing. Clean and peaceful environment!!!',
-    associatedImage: '/images/wellness-therapy.jpg',
+    associatedImage: '/images/procedure-oxygen-infusion.jpg',
   },
   {
     id: 'jaime',
@@ -698,7 +698,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
       timeAgo: '1 year ago',
       text: "Jaime! Thank you so much for trusting me with your body sculpting journey! I'm thrilled to hear you're seeing great results with the Cavitation Lipo and Radio Frequency treatments. Your progress is amazing, and it's a pleasure to be part of your transformation.",
     },
-    associatedImage: '/fotos_webp/cavi_lipo.webp',
+    associatedImage: '/images/procedure-cavitation-body.jpg',
   },
   {
     id: 'diana-mager',
@@ -711,7 +711,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Non-Invasive Face, Neck & Chest',
     highlight: 'My face, neck and upper chest look better and better with every treatment. It changes your look without invasive measures! 10 stars!',
     text: 'What a fantastic experience! I keep going back because my face, neck and upper chest look better and better with every treatment. Ledy is amazing! It’s peaceful, soothing and a great way to pamper yourself but changes your look without invasive measures !!!! 10 stars !',
-    associatedImage: '/images/treatment-deep-pore.jpg',
+    associatedImage: '/images/procedure-nanoneedling.jpg',
   },
   {
     id: 'rose-azor',
@@ -724,7 +724,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Facial Pore Refining & Skin Glow',
     highlight: 'I had such a glow, my skin looked clearer and pores noticeably smaller. So glad I came. Ledy is such a kind, caring person.',
     text: 'I had an appointment with Ledy on September 20, 2024. All I can say is that I\'m so happy with the way my skin looked after the facial. I had such a glow, my skin looked clearer and pores noticeably smaller. So glad I came. Ledy is such a kind, caring person and takes so much pride in what she does. I can\'t wait to come back for my next facial. Thank you so much Ledy.',
-    associatedImage: '/fotos_webp/rezenerate.webp',
+    associatedImage: '/images/procedure-nanoneedling.jpg',
   },
   {
     id: 'theway-iseelt',
@@ -738,7 +738,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Hydrogen Inhalation & Light Therapy',
     highlight: 'How relaxing and rejuvenating the session was. I feel I have more swagger in my step. Definitely going back for another session.',
     text: "I must say I am impressed with Ledy and her service. As a man, I was skeptical and even hesitant in considering any form of treatment. That's just the way us men are. After some convincing by my wife and Ledy, I finally gave in and submitted to the 'hydrogen inhalation with light' therapy. I have to tell you how relaxing and rejuvenating the session was. I feel I have more swagger in my step. It just feels great, no other way to describe it. Definitely going back for another session. Ledy is totally professional and explained the benefits and procedure beforehand to waylay any concerns I had.",
-    associatedImage: '/images/treatment-pemf.jpg',
+    associatedImage: '/images/procedure-oxygen-infusion.jpg',
   },
   {
     id: 'stamford-instructor',
@@ -756,7 +756,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
       timeAgo: '1 year ago',
       text: "Thank you so much for your thoughtful words! I'm truly grateful you gave me the opportunity to guide you through the process, and I'm so glad you felt comfortable and informed every step of the way. Creating a welcoming, clean space and setting realistic expectations is very important to me.",
     },
-    associatedImage: '/images/hero-clinic.jpg',
+    associatedImage: '/images/procedure-cavitation-body.jpg',
   },
   {
     id: 'rosanne-young',
@@ -769,7 +769,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Personalized Oasis Session',
     highlight: 'Her facility is an oasis. You get an immediate feeling of relaxation. Hours of pampering with significant results your first visit!',
     text: 'What an amazing experience! Had my first session with Leyda today. She is so passionate about making sure that she customizes the treatments to your exact issues. Her facility is an oasis. You get an immediate feeling of relaxation. Leyda gives you hours of pampering with significant results your first visit! Her many years of experience have made her a valuable resource. Looking forward to my 2nd visit! Thanks Leyda! 😘',
-    associatedImage: '/images/hero-clinic.jpg',
+    associatedImage: '/images/procedure-rf-tightening.jpg',
   },
   {
     id: 'kevin-piscitelli',
@@ -782,7 +782,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
     treatmentTag: 'Long-term Professional Aesthetic Care',
     highlight: 'I have been going to Ledy for many years and she is the consummate professional. Stays on top of new processes and techniques.',
     text: 'I have been going to Ledy for many years and she is the consummate professional. She continues to grow and develop her business and stays on top of new processes and techniques. I have purchased many gift certificates to give to customers and friends for them to experience.',
-    associatedImage: '/fotos_webp/ledy_founder.webp',
+    associatedImage: '/images/procedure-nanoneedling.jpg',
   },
   {
     id: 'jimena-umana',
@@ -800,7 +800,7 @@ export const GOOGLE_REVIEWS: GoogleReview[] = [
       timeAgo: '11 months ago',
       text: "Thank you, Jimana! I'm so happy you're seeing such great results. Your dedication truly shows! Grateful you chose ESSENCCIA! Ledy",
     },
-    associatedImage: '/fotos_webp/rf_tightening.webp',
+    associatedImage: '/images/procedure-cavitation-body.jpg',
   },
 ];
 
