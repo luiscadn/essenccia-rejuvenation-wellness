@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X, ShieldCheck, Phone, Mail, ExternalLink, Sparkles } from 'lucide-react';
 import Link from 'next/link';
-import { PRIVACY_TERMS_SECTIONS, SPA_POLICIES } from '@/data/clinic-data';
+import { PRIVACY_TERMS_SECTIONS, SPA_POLICIES, CLINIC_INFO } from '@/data/clinic-data';
 
 interface PolicyModalProps {
   isOpen: boolean;
@@ -142,18 +142,18 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({
                         {sec.number === '6' && (
                           <div className="pt-2 flex flex-wrap items-center gap-3">
                             <a
-                              href="tel:2034868989"
+                              href={`tel:${CLINIC_INFO.phoneClean}`}
                               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#484774]/5 hover:bg-[#484774]/10 text-xs text-[#484774] font-semibold transition-colors"
                             >
                               <Phone className="w-3.5 h-3.5 text-[#d7a761]" />
-                              <span>(203) 486-8989</span>
+                              <span>{CLINIC_INFO.phone}</span>
                             </a>
                             <a
-                              href="mailto:info@essencciarejuvenationwellness.com"
+                              href={`mailto:${CLINIC_INFO.email}`}
                               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#484774]/5 hover:bg-[#484774]/10 text-xs text-[#484774] font-semibold transition-colors"
                             >
                               <Mail className="w-3.5 h-3.5 text-[#d7a761]" />
-                              <span>info@essencciarejuvenationwellness.com</span>
+                              <span>{CLINIC_INFO.email}</span>
                             </a>
                           </div>
                         )}

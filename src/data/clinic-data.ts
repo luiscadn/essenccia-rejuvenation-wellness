@@ -451,6 +451,7 @@ export const CLINIC_INFO = {
   country: 'USA',
   phone: '(203) 486-8989',
   phoneClean: '2034868989',
+  email: 'info@essencciarejuvenationwellnes.com',
   hours: {
     weekdays: 'Monday – Saturday: 8:00 AM – 4:00 PM',
     sunday: 'Sunday: Closed by Appointment Only'
@@ -544,12 +545,12 @@ export const PRIVACY_TERMS_SECTIONS = [
   {
     number: '6',
     title: 'Contact for Help',
-    text: 'For assistance, contact us at: phone number: (203) 486-8989 email: info@essencciarejuvenationwellness.com\n\nYou may also reply with the word HELP to receive our contact details via text.',
+    text: 'For assistance, contact us at: phone number: (203) 486-8989 email: info@essencciarejuvenationwellnes.com\n\nYou may also reply with the word HELP to receive our contact details via text.',
   },
   {
     number: '7',
     title: 'Opt-Out Instructions',
-    text: 'You may opt out of SMS messages at any time by:\n• Replying STOP or CANCEL to any message,\n• Emailing us at info@essencciarejuvenationwellness.com or calling us at (203) 486-8989\n\nAfter unsubscribing, you will receive one final confirmation SMS. Your phone number will be removed from our list within 24 hours.',
+    text: 'You may opt out of SMS messages at any time by:\n• Replying STOP or CANCEL to any message,\n• Emailing us at info@essencciarejuvenationwellnes.com or calling us at (203) 486-8989\n\nAfter unsubscribing, you will receive one final confirmation SMS. Your phone number will be removed from our list within 24 hours.',
   },
   {
     number: '8',

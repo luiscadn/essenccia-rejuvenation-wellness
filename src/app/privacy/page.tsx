@@ -111,11 +111,11 @@ export default function PrivacyPolicyPage() {
                       <span>{CLINIC_INFO.phone}</span>
                     </a>
                     <a
-                      href="mailto:info@essencciarejuvenationwellness.com"
+                      href={`mailto:${CLINIC_INFO.email}`}
                       className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#484774]/20 hover:border-[#484774] text-xs uppercase tracking-[0.16em] font-medium text-[#484774] transition-all bg-white"
                     >
                       <Mail className="w-3.5 h-3.5 text-[#d7a761]" />
-                      <span>info@essencciarejuvenationwellness.com</span>
+                      <span>{CLINIC_INFO.email}</span>
                     </a>
                   </div>
                 )}
@@ -174,6 +174,13 @@ export default function PrivacyPolicyPage() {
               >
                 <Phone className="w-4 h-4" />
                 <span>Call {CLINIC_INFO.phone}</span>
+              </a>
+              <a
+                href={`mailto:${CLINIC_INFO.email}`}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 hover:border-white text-xs uppercase tracking-[0.18em] font-medium text-white transition-all"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Email Clinic</span>
               </a>
               <Link
                 href="/"

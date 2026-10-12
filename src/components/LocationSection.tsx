@@ -1,8 +1,9 @@
 'use client';
 
 import React from 'react';
-import { MapPin, Phone, Clock, ExternalLink, Calendar } from 'lucide-react';
+import { MapPin, Phone, Clock, ExternalLink, Calendar, Mail } from 'lucide-react';
 import { CLINIC_INFO } from '@/data/clinic-data';
+import { InstagramIcon, FacebookIcon } from '@/components/SocialIcons';
 
 interface LocationSectionProps {
   onOpenBooking: () => void;
@@ -88,22 +89,100 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                   </p>
                 </div>
               </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#484774] shadow-sm flex-shrink-0">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-xs uppercase tracking-wider font-semibold text-[#484774]">
+                    Direct Email Inquiries
+                  </h3>
+                  <p className="text-sm text-stone-700 font-light mt-1">
+                    <a
+                      href={`mailto:${CLINIC_INFO.email}`}
+                      className="font-medium text-[#484774] hover:text-[#739cd2] transition-colors underline underline-offset-4 break-all"
+                    >
+                      {CLINIC_INFO.email}
+                    </a>
+                  </p>
+                  <p className="text-xs text-stone-500 mt-0.5">
+                    Send intake questions, protocol inquiries, or consultation requests.
+                  </p>
+                </div>
+              </div>
+
+              {/* Social Channels with Logos */}
+              <div className="pt-2 p-4 rounded-2xl bg-white/90 border border-[#a2a1ba]/25 shadow-xs space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-[#484774] font-semibold">
+                    Connect On Social Media
+                  </span>
+                  <span className="text-[10px] text-stone-400 uppercase tracking-widest font-mono">
+                    Official Accounts
+                  </span>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <a
+                    href={CLINIC_INFO.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-amber-500/10 hover:from-purple-500/20 hover:to-amber-500/20 border border-stone-200 text-stone-800 text-xs font-medium transition-all group shadow-2xs"
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 rounded-lg bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white shadow-xs group-hover:scale-105 transition-transform">
+                        <InstagramIcon className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="text-left">
+                        <span className="block font-semibold text-[#484774]">Instagram</span>
+                        <span className="block text-[10px] text-stone-500 font-light -mt-0.5">@essenccia_rejuvenation_well</span>
+                      </div>
+                    </div>
+                    <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-[#484774] group-hover:translate-x-0.5 transition-all" />
+                  </a>
+
+                  <a
+                    href={CLINIC_INFO.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-blue-500/10 hover:bg-blue-500/15 border border-stone-200 text-stone-800 text-xs font-medium transition-all group shadow-2xs"
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <div className="w-6 h-6 rounded-lg bg-[#1877f2] flex items-center justify-center text-white shadow-xs group-hover:scale-105 transition-transform">
+                        <FacebookIcon className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="text-left">
+                        <span className="block font-semibold text-[#484774]">Facebook</span>
+                        <span className="block text-[10px] text-stone-500 font-light -mt-0.5">Essenccia Wellness</span>
+                      </div>
+                    </div>
+                    <ExternalLink className="w-3.5 h-3.5 text-stone-400 group-hover:text-[#484774] group-hover:translate-x-0.5 transition-all" />
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div className="pt-2 flex flex-col sm:flex-row gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row gap-3">
               <button
                 onClick={onOpenBooking}
-                className="px-8 py-3.5 rounded-full bg-[#484774] hover:bg-[#3b3a63] text-white text-xs uppercase tracking-[0.2em] font-medium transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02]"
+                className="px-6 py-3.5 rounded-full bg-[#484774] hover:bg-[#3b3a63] text-white text-xs uppercase tracking-[0.2em] font-medium transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] cursor-pointer"
               >
                 <Calendar className="w-4 h-4 text-[#d7a761]" />
                 <span>Reserve Consultation</span>
               </button>
               <a
                 href={`tel:${CLINIC_INFO.phoneClean}`}
-                className="px-8 py-3.5 rounded-full border border-[#484774]/20 hover:border-[#484774] text-[#484774] text-xs uppercase tracking-[0.2em] font-medium transition-all flex items-center justify-center gap-2 hover:bg-stone-50 hover:scale-[1.02]"
+                className="px-6 py-3.5 rounded-full border border-[#484774]/20 hover:border-[#484774] text-[#484774] text-xs uppercase tracking-[0.2em] font-medium transition-all flex items-center justify-center gap-2 hover:bg-white hover:scale-[1.02]"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Clinic</span>
+              </a>
+              <a
+                href={`mailto:${CLINIC_INFO.email}`}
+                className="px-6 py-3.5 rounded-full border border-[#484774]/20 hover:border-[#484774] text-[#484774] text-xs uppercase tracking-[0.2em] font-medium transition-all flex items-center justify-center gap-2 hover:bg-white hover:scale-[1.02]"
+              >
+                <Mail className="w-4 h-4" />
+                <span>Email Ledy</span>
               </a>
             </div>
           </div>

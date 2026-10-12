@@ -239,15 +239,25 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 />
               </div>
 
-              {/* Call or Text alternative */}
-              <div className="p-3.5 bg-[#f0efec] rounded-xl border border-[#a2a1ba]/25 flex items-center justify-between text-xs">
+              {/* Call, Text or Email alternative */}
+              <div className="p-3.5 bg-[#f0efec] rounded-xl border border-[#a2a1ba]/25 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
                 <span className="text-stone-600">Prefer direct personal booking?</span>
-                <a
-                  href={`tel:${CLINIC_INFO.phoneClean}`}
-                  className="text-stone-900 font-bold hover:text-[#484774] flex items-center gap-1"
-                >
-                  <Phone className="w-3.5 h-3.5" /> Call/Text {CLINIC_INFO.phone}
-                </a>
+                <div className="flex items-center gap-3 font-semibold">
+                  <a
+                    href={`tel:${CLINIC_INFO.phoneClean}`}
+                    className="text-stone-900 hover:text-[#484774] flex items-center gap-1 transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-[#484774]" /> Call/Text
+                  </a>
+                  <span className="text-stone-300">|</span>
+                  <a
+                    href={`mailto:${CLINIC_INFO.email}`}
+                    className="text-stone-900 hover:text-[#484774] flex items-center gap-1 transition-colors"
+                    title={CLINIC_INFO.email}
+                  >
+                    <Mail className="w-3.5 h-3.5 text-[#484774]" /> Email Ledy
+                  </a>
+                </div>
               </div>
 
               {/* Submit CTA */}
