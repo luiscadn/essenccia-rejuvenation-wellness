@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Check, Award } from 'lucide-react';
+import { Check, Award, ArrowUpRight } from 'lucide-react';
 import { CLINIC_INFO } from '@/data/clinic-data';
 
 interface FooterProps {
@@ -177,8 +177,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500 font-light border-t border-stone-800/80">
           <p>© 2026 Essenccia Rejuvenation &amp; Wellness. All rights reserved.</p>
 
-          {/* Developer Credit Signature */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-900/90 border border-stone-800/90 hover:border-[#d7a761]/50 transition-all duration-300 shadow-xs group">
+          {/* Developer Credit Signature Link */}
+          <a
+            href="https://luiscadena.abstergo.page/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-900/90 hover:bg-stone-800/90 border border-stone-800/90 hover:border-[#d7a761]/60 transition-all duration-300 shadow-xs group cursor-pointer"
+            title="Visit Luis Cadena's website"
+          >
             <span className="w-1.5 h-1.5 rounded-full bg-[#739cd2] group-hover:bg-[#d7a761] group-hover:scale-125 transition-all shadow-xs" />
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-400 group-hover:text-stone-300 transition-colors">
               code by
@@ -186,7 +192,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
             <span className="font-serif italic text-sm text-stone-200 group-hover:text-[#d7a761] transition-colors font-medium tracking-wide">
               Luis Cadena
             </span>
-          </div>
+            <ArrowUpRight className="w-3 h-3 text-stone-500 group-hover:text-[#d7a761] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+          </a>
 
           <div className="flex items-center gap-6">
             <span>Westport, Connecticut</span>
