@@ -4,6 +4,7 @@ import React from 'react';
 import { MapPin, Phone, Clock, ExternalLink, Calendar, Mail } from 'lucide-react';
 import { CLINIC_INFO } from '@/data/clinic-data';
 import { InstagramIcon, FacebookIcon } from '@/components/SocialIcons';
+import { ClinicMap } from '@/components/ClinicMap';
 
 interface LocationSectionProps {
   onOpenBooking: () => void;
@@ -187,50 +188,41 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
             </div>
           </div>
 
-          {/* Right: Architectural Card & Visual Map Pin */}
-          <div className="lg:col-span-6">
-            <div className="bg-white rounded-2xl p-8 border border-[#a2a1ba]/25 shadow-md space-y-6">
-              <div className="space-y-2">
-                <span className="text-[10px] uppercase tracking-[0.2em] text-[#484774] font-semibold">
-                  Private Practice In Westport
-                </span>
-                <h3 className="font-sans text-xl sm:text-2xl font-semibold text-[#484774]">
-                  Essenccia Rejuvenation & Wellness
-                </h3>
-                <p className="text-stone-600 text-xs sm:text-sm font-light leading-relaxed">
-                  Located at Sylvan Road South in Westport with easy access from the Post Road and I-95. Discreet ground-floor private suite ensuring complete confidentiality and calm.
-                </p>
-              </div>
+          {/* Right: Architectural Card & Interactive Map */}
+          <div className="lg:col-span-6 space-y-6">
+            <div className="bg-white rounded-3xl p-5 sm:p-7 border border-[#a2a1ba]/25 shadow-lg space-y-5">
+              {/* Interactive Google Map with Pin, InfoWindow, and Controls */}
+              <ClinicMap />
 
-              {/* Stylized Minimalist Map Card */}
-              <div className="p-6 rounded-xl bg-[#f7f7f4] border border-stone-200/80 space-y-4">
-                <div className="flex items-center justify-between border-b border-stone-200 pb-3">
-                  <span className="text-xs font-semibold text-stone-800 uppercase tracking-wider">
+              {/* Regional Service Region Badges */}
+              <div className="pt-3 border-t border-stone-200/80">
+                <div className="flex items-center justify-between pb-2.5">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-[#484774] font-semibold">
                     Connecticut Service Region
                   </span>
-                  <span className="text-xs text-[#484774] font-medium">Fairfield County</span>
+                  <span className="text-xs text-stone-500 font-light">
+                    Fairfield County · Private Suite
+                  </span>
                 </div>
-                <div className="grid grid-cols-2 gap-3 text-xs text-stone-600 font-light">
-                  <div className="space-y-1">
-                    <p className="font-medium text-stone-900">• Westport</p>
-                    <p className="font-medium text-stone-900">• Southport</p>
-                    <p className="font-medium text-stone-900">• Fairfield</p>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="font-medium text-stone-900">• Norwalk</p>
-                    <p className="font-medium text-stone-900">• Darien & New Canaan</p>
-                    <p className="font-medium text-stone-900">• Greenwich</p>
-                  </div>
-                </div>
-                <div className="pt-2">
-                  <a
-                    href="https://maps.google.com/?q=25+Sylvan+Road+South+Suite+A+Westport+CT+06880"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-full py-2.5 bg-[#f0efec] hover:bg-[#f0efec] text-stone-800 text-xs uppercase tracking-wider font-medium text-center rounded-lg flex items-center justify-center gap-2 transition-colors"
-                  >
-                    <MapPin className="w-3.5 h-3.5 text-[#484774]" /> Get Driving Directions
-                  </a>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-stone-600 font-light">
+                  <span className="px-2.5 py-1.5 rounded-lg bg-[#f7f7f4] border border-stone-200/60 font-medium text-stone-800 text-center">
+                    Westport
+                  </span>
+                  <span className="px-2.5 py-1.5 rounded-lg bg-[#f7f7f4] border border-stone-200/60 font-medium text-stone-800 text-center">
+                    Southport
+                  </span>
+                  <span className="px-2.5 py-1.5 rounded-lg bg-[#f7f7f4] border border-stone-200/60 font-medium text-stone-800 text-center">
+                    Fairfield
+                  </span>
+                  <span className="px-2.5 py-1.5 rounded-lg bg-[#f7f7f4] border border-stone-200/60 font-medium text-stone-800 text-center">
+                    Norwalk
+                  </span>
+                  <span className="px-2.5 py-1.5 rounded-lg bg-[#f7f7f4] border border-stone-200/60 font-medium text-stone-800 text-center">
+                    Darien &amp; New Canaan
+                  </span>
+                  <span className="px-2.5 py-1.5 rounded-lg bg-[#f7f7f4] border border-stone-200/60 font-medium text-stone-800 text-center">
+                    Greenwich
+                  </span>
                 </div>
               </div>
             </div>
