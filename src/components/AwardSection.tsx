@@ -32,7 +32,7 @@ export const AwardSection: React.FC<AwardSectionProps> = ({ onOpenBooking }) => 
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="mb-4 sm:mb-0 sm:absolute sm:-top-6 sm:-left-6 bg-[#484774] text-white p-4 sm:p-6 rounded-2xl shadow-[0_20px_40px_-15px_rgba(72,71,116,0.5)] border-2 border-[#d7a761]/40 sm:max-w-[260px] z-20 w-full sm:w-auto"
+              className="mb-4 sm:mb-0 sm:absolute sm:-top-6 sm:-right-6 bg-[#484774] text-white p-4 sm:p-6 rounded-2xl shadow-[0_20px_40px_-15px_rgba(72,71,116,0.5)] border-2 border-[#d7a761]/40 sm:max-w-[260px] z-20 w-full sm:w-auto"
             >
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#d7a761]/20 flex items-center justify-center shrink-0 border border-[#d7a761]/50">
