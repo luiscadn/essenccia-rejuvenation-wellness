@@ -105,7 +105,7 @@ export const TREATMENTS: Treatment[] = [
       'Clinically softens acne scarring and discoloration'
     ],
     tech: 'Italian Medical Formula (TCA 33% + H2O2 + Kojic Acid)',
-    image: '/images/treatment-prx-t33.jpg',
+    image: '/images/procedure-prx-t33.jpg',
   },
   {
     id: 'infusion-electro-mesotherapy',
@@ -124,7 +124,7 @@ export const TREATMENTS: Treatment[] = [
       'Pain-free needleless mesotherapy'
     ],
     tech: 'IonWave™ Electro-Mesotherapy Technology',
-    image: '/images/treatment-mesotherapy.jpg',
+    image: '/images/procedure-mesotherapy.jpg',
   },
   {
     id: 'body-contouring-cellulite',
@@ -143,7 +143,7 @@ export const TREATMENTS: Treatment[] = [
       'Comfortable treatment akin to a deep warm massage'
     ],
     tech: 'CORE™ Multi-Frequency Vacuum Radiofrequency',
-    image: '/images/treatment-cellulite.jpg',
+    image: '/images/procedure-cellulite.jpg',
   },
   {
     id: 'hydrogen-inhalation-led',
@@ -198,7 +198,7 @@ export const TREATMENTS: Treatment[] = [
       'Prepares skin for deeper nutrient absorption'
     ],
     tech: 'Medical Diamond-Tip Controlled Vacuum Resurfacing',
-    image: '/images/treatment-microdermabrasion.jpg',
+    image: '/images/procedure-microdermabrasion.jpg',
   },
   {
     id: 'jawline-sculpt-lift',
@@ -217,7 +217,7 @@ export const TREATMENTS: Treatment[] = [
       'Non-surgical and fully personalized'
     ],
     tech: 'Cavi-Lipo Ultrasound + Radiofrequency Combination',
-    image: '/images/treatment-jawline-lift.jpg',
+    image: '/images/procedure-jawline-lift.jpg',
   },
   {
     id: 'advanced-deep-pore-renewal',
@@ -236,7 +236,7 @@ export const TREATMENTS: Treatment[] = [
       'Included in the VIP Special'
     ],
     tech: 'Clinical Skin Evaluation & Hydro-Purifying Protocol',
-    image: '/images/treatment-deep-pore.jpg',
+    image: '/images/procedure-deep-pore.jpg',
   },
   {
     id: 'targeted-fat-reduction',
@@ -312,7 +312,7 @@ export const TREATMENTS: Treatment[] = [
       'No obligation, zero pressure'
     ],
     tech: 'Clinical Digital Skin Diagnostic & Expert Palpation',
-    image: '/images/treatment-consultation.jpg',
+    image: '/images/procedure-consultation.jpg',
   }
 ];
 
