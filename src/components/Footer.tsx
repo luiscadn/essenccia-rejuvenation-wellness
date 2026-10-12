@@ -174,8 +174,20 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500 font-light">
-          <p>© 2026 Essenccia Rejuvenation & Wellness. All rights reserved.</p>
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-500 font-light border-t border-stone-800/80">
+          <p>© 2026 Essenccia Rejuvenation &amp; Wellness. All rights reserved.</p>
+
+          {/* Developer Credit Signature */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-900/90 border border-stone-800/90 hover:border-[#d7a761]/50 transition-all duration-300 shadow-xs group">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#739cd2] group-hover:bg-[#d7a761] group-hover:scale-125 transition-all shadow-xs" />
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-400 group-hover:text-stone-300 transition-colors">
+              code by
+            </span>
+            <span className="font-serif italic text-sm text-stone-200 group-hover:text-[#d7a761] transition-colors font-medium tracking-wide">
+              Luis Cadena
+            </span>
+          </div>
+
           <div className="flex items-center gap-6">
             <span>Westport, Connecticut</span>
             <span>•</span>
